@@ -1,0 +1,35 @@
+.gitconfig
+
+# backup files
+*.*~
+*.swp
+
+# ghc compiled stuff
+*.hi
+*.o
+*.hs.swp
+.cabal-sandbox/*
+cabal.sandbox.config
+dist/*
+
+#stack
+.stack-work/*
+
+# python
+*.pyc
+__pycache__
+
+# freaking windows
+*.db
+
+# document files are no-no, pdf ok
+*.odt
+*.doc
+*.docx
+*.ods
+*.xls
+*.xlsx
+
+# back up stuff
+*.bak
+proto/*
