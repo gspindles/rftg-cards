@@ -39,7 +39,7 @@ data Cost
     deriving (Eq, Read, Show)
 
 data VP
-  = Intrinsic Int  -- raw victory points
+  = VP Int         -- raw victory points
   | QuestionMark   -- ? variable victory points
   | Prestige       -- prestige
     deriving (Eq, Read, Show)

@@ -16,7 +16,7 @@ colonyShip :: Card
 colonyShip = Development
   "COLONY SHIP"
   (Payment 2)
-  (Intrinsic 1)
+  (VP 1)
   []
   [Settle]
 
@@ -24,7 +24,7 @@ consumerMarkets :: Card
 consumerMarkets = Development
   "CONSUMER MARKETS"
   (Payment 5)
-  (Intrinsic 3)
+  (VP 3)
   []
   [Consume, Produce]
 
@@ -32,7 +32,7 @@ contactSpecialist :: Card
 contactSpecialist = Development
   "CONTACT SPECIALIST"
   (Payment 1)
-  (Intrinsic 1)
+  (VP 1)
   []
   [Settle]
 
@@ -40,7 +40,7 @@ deficitSpending :: Card
 deficitSpending = Development
   "DEFICIT SPENDING"
   (Payment 2)
-  (Intrinsic 1)
+  (VP 1)
   []
   [Consume]
 
@@ -48,7 +48,7 @@ diversifiedEconomy :: Card
 diversifiedEconomy = Development
   "DIVERSIFIED ECONOMY"
   (Payment 4)
-  (Intrinsic 2)
+  (VP 2)
   []
   [Consume, Produce]
 
@@ -56,7 +56,7 @@ dropShips :: Card
 dropShips = Development
   "DROP SHIPS"
   (Payment 4)
-  (Intrinsic 2)
+  (VP 2)
   []
   [Settle]
 
@@ -64,7 +64,7 @@ expeditionForce :: Card
 expeditionForce = Development
   "EXPEDITION FORCE"
   (Payment 1)
-  (Intrinsic 1)
+  (VP 1)
   []
   [Explore, Settle]
 
@@ -72,7 +72,7 @@ exportDuties :: Card
 exportDuties = Development
   "EXPORT DUTIES"
   (Payment 1)
-  (Intrinsic 1)
+  (VP 1)
   []
   [Trade]
 
@@ -80,7 +80,7 @@ geneticsLab :: Card
 geneticsLab = Development
   "GENETICS LAB"
   (Payment 2)
-  (Intrinsic 1)
+  (VP 1)
   []
   [Trade, Produce]
 
@@ -88,7 +88,7 @@ interstellarBank :: Card
 interstellarBank = Development
   "INTERSTELLAR BANK"
   (Payment 2)
-  (Intrinsic 1)
+  (VP 1)
   []
   [Develop]
 
@@ -96,7 +96,7 @@ investmentCredits :: Card
 investmentCredits = Development
   "INVESTMENT CREDITS"
   (Payment 1)
-  (Intrinsic 1)
+  (VP 1)
   []
   [Develop]
 
@@ -104,7 +104,7 @@ miningConglomerate :: Card
 miningConglomerate = Development
   "MINING CONGLOMERATE"
   (Payment 3)
-  (Intrinsic 2)
+  (VP 2)
   []
   [Trade, Consume, Produce]
 
@@ -112,7 +112,7 @@ miningRobots :: Card
 miningRobots = Development
   "MINING ROBOTS"
   (Payment 2)
-  (Intrinsic 1)
+  (VP 1)
   []
   [Settle, Produce]
 
@@ -120,7 +120,7 @@ newMilitaryTactics :: Card
 newMilitaryTactics = Development
   "NEW MILITARY TACTICS"
   (Payment 1)
-  (Intrinsic 1)
+  (VP 1)
   []
   [Settle]
 
@@ -128,7 +128,7 @@ publicWorks :: Card
 publicWorks = Development
   "PUBLIC WORKS"
   (Payment 1)
-  (Intrinsic 1)
+  (VP 1)
   []
   [Develop, Consume]
 
@@ -136,7 +136,7 @@ replicantRobots :: Card
 replicantRobots = Development
   "REPLICANT ROBOTS"
   (Payment 4)
-  (Intrinsic 2)
+  (VP 2)
   []
   [Settle]
 
@@ -144,7 +144,7 @@ researchLabs :: Card
 researchLabs = Development
   "RESEARCH lABS"
   (Payment 4)
-  (Intrinsic 2)
+  (VP 2)
   []
   [Explore, Consume, Produce]
 
@@ -152,7 +152,7 @@ spaceMarines :: Card
 spaceMarines = Development
   "SPACE MARINES"
   (Payment 2)
-  (Intrinsic 1)
+  (VP 1)
   []
   [Settle]
 
@@ -160,7 +160,7 @@ terraformingRobots :: Card
 terraformingRobots = Development
   "TERRAFORMING ROBOTS"
   (Payment 3)
-  (Intrinsic 2)
+  (VP 2)
   [Terraforming]
   [Settle, Consume]
 
@@ -169,7 +169,7 @@ alienRobotScoutShip = World
   "ALIEN ROBOT SCOUT SHIP"
   (Defense 4)
   (WindFall AlienTechnology)
-  (Intrinsic 2)
+  (VP 2)
   [Alien]
   [Settle]
 
@@ -178,7 +178,7 @@ alienRobotSentry = World
   "ALIEN ROBOT SENTRY"
   (Defense 2)
   (WindFall AlienTechnology)
-  (Intrinsic 2)
+  (VP 2)
   [Alien]
   []
 
@@ -187,7 +187,7 @@ alienRoboticFactory = World
   "ALIEN ROBOTIC FACTORY"
   (Payment 6)
   (Production AlienTechnology)
-  (Intrinsic 5)
+  (VP 5)
   [Alien]
   [Produce]
 
@@ -196,7 +196,7 @@ alienRosettaStoneWorld = World
   "ALIEN ROSETTA STONE WORLD"
   (Defense 3)
   Gray
-  (Intrinsic 3)
+  (VP 3)
   [Alien]
   [Settle, Produce]
 
@@ -205,7 +205,7 @@ alphaCentauri = World
   "ALPHA CENTAURI"
   (Payment 2)
   (WindFall Rare)
-  (Intrinsic 0)
+  (VP 0)
   []
   [Settle]
 
@@ -214,7 +214,7 @@ aquaticUpliftRace = World
   "AQUATIC UPLIFT RACE"
   (Defense 2)
   (WindFall Genes)
-  (Intrinsic 2)
+  (VP 2)
   [Uplift, Chromosome]
   []
 
@@ -223,7 +223,7 @@ artistColony = World
   "ARTIST COLONY"
   (Payment 1)
   (Production Novelty)
-  (Intrinsic 1)
+  (VP 1)
   []
   [Produce]
 
@@ -232,7 +232,7 @@ asteroidBelt = World
   "ASTEROID BELT"
   (Payment 2)
   (WindFall Rare)
-  (Intrinsic 1)
+  (VP 1)
   []
   []
 
@@ -241,7 +241,7 @@ avianUpliftRace = World
   "AVIAN UPLIFT RACE"
   (Defense 2)
   (WindFall Genes)
-  (Intrinsic 2)
+  (VP 2)
   [Uplift, Chromosome]
   []
 
@@ -250,7 +250,7 @@ bioHazardMiningWorld = World
   "BIO-HAZARD MINING WORLD"
   (Payment 3)
   (Production Rare)
-  (Intrinsic 2)
+  (VP 2)
   []
   [Trade, Produce]
 
@@ -259,7 +259,7 @@ blackMarketTradingWorld = World
   "BLACK MARKET TRADING WORLD"
   (Payment 3)
   Gray
-  (Intrinsic 2)
+  (VP 2)
   []
   [Trade]
 
@@ -268,7 +268,7 @@ blasterGemMines = World
   "BLASTER GEM MINES"
   (Payment 3)
   (WindFall Rare)
-  (Intrinsic 2)
+  (VP 2)
   []
   [Settle]
 
@@ -277,7 +277,7 @@ cometZone = World
   "COMET ZONE"
   (Payment 3)
   (Production Rare)
-  (Intrinsic 2)
+  (VP 2)
   []
   [Produce]
 
@@ -286,7 +286,7 @@ desertedAlienColony = World
   "DESERTED ALIEN COLONY"
   (Payment 5)
   (WindFall AlienTechnology)
-  (Intrinsic 4)
+  (VP 4)
   [Alien]
   []
 
@@ -295,7 +295,7 @@ desertedAlienLibrary = World
   "DESERTED ALIEN LIBRARY"
   (Payment 6)
   (WindFall AlienTechnology)
-  (Intrinsic 5)
+  (VP 5)
   [Alien]
   []
 
@@ -304,7 +304,7 @@ desertedAlienOutpost = World
   "DESERTED ALIEN OUTPOST"
   (Payment 4)
   (WindFall AlienTechnology)
-  (Intrinsic 3)
+  (VP 3)
   [Alien]
   []
 
@@ -313,7 +313,7 @@ destroyedWorld = World
   "DESTROYED WORLD"
   (Payment 1)
   (WindFall Rare)
-  (Intrinsic 0)
+  (VP 0)
   []
   []
 
@@ -322,7 +322,7 @@ distantWorld = World
   "DISTANT WORLD"
   (Payment 4)
   (Production Genes)
-  (Intrinsic 2)
+  (VP 2)
   []
   [Trade, Produce]
 
@@ -331,7 +331,7 @@ earthsLostColony = World
   "EARTH'S LOST COLONY"
   (Payment 2)
   (Production Novelty)
-  (Intrinsic 1)
+  (VP 1)
   []
   [Consume, Produce]
 
@@ -340,7 +340,7 @@ empathWorld = World
   "EMPATH WORLD"
   (Payment 1)
   (WindFall Rare)
-  (Intrinsic 1)
+  (VP 1)
   []
   [Settle]
 
@@ -349,7 +349,7 @@ epsilonEridani = World
   "EPSILON ERIDANI"
   (Payment 2)
   Gray
-  (Intrinsic 1)
+  (VP 1)
   []
   [Settle, Consume]
 
@@ -358,7 +358,7 @@ expandingColony = World
   "EXPANDING COLONY"
   (Payment 1)
   Gray
-  (Intrinsic 1)
+  (VP 1)
   []
   [Consume, Produce]
 
@@ -367,7 +367,7 @@ formerPenalColony = World
   "FORMER PENAL COLONY"
   (Defense 2)
   (WindFall Novelty)
-  (Intrinsic 1)
+  (VP 1)
   []
   [Settle]
 
@@ -376,7 +376,7 @@ galacticEngineers = World
   "GALACTIC ENGINEERS"
   (Payment 2)
   Gray
-  (Intrinsic 1)
+  (VP 1)
   []
   [Trade, Produce]
 
@@ -385,7 +385,7 @@ galacticResort = World
   "GALACTIC RESORT"
   (Payment 3)
   (WindFall Novelty)
-  (Intrinsic 2)
+  (VP 2)
   []
   [Consume]
 
@@ -394,7 +394,7 @@ galacticTrendsetters = World
   "GALACTIC TRENDSETTERS"
   (Payment 5)
   Gray
-  (Intrinsic 3)
+  (VP 3)
   []
   [Consume]
 
@@ -403,7 +403,7 @@ gamblingWorld = World
   "GAMBLING WORLD"
   (Payment 1)
   Gray
-  (Intrinsic 1)
+  (VP 1)
   []
   [Consume]
 
@@ -412,7 +412,7 @@ gemWorld = World
   "GEM WORLD"
   (Payment 2)
   (Production Novelty)
-  (Intrinsic 1)
+  (VP 1)
   []
   [Produce]
 
@@ -421,7 +421,7 @@ imperiumArmamentsWorld = World
   "IMPERIUM ARMAMENTS WORLD"
   (Payment 4)
   (Production Rare)
-  (Intrinsic 2)
+  (VP 2)
   [Imperium]
   [Settle, Produce]
 
@@ -430,7 +430,7 @@ lostAlienBattleFleet = World
   "LOST ALIEN BATTLE FLEET"
   (Defense 6)
   (Production AlienTechnology)
-  (Intrinsic 4)
+  (VP 4)
   [Alien]
   [Settle, Produce]
 
@@ -439,7 +439,7 @@ lostAlienWarship = World
   "LOST ALIEN WARSHIP"
   (Defense 5)
   (WindFall AlienTechnology)
-  (Intrinsic 3)
+  (VP 3)
   []
   [Settle]
 
@@ -448,7 +448,7 @@ lostSpeciesArkWorld = World
   "LOST SPECIES ARK WORLD"
   (Payment 5)
   (Production Genes)
-  (Intrinsic 3)
+  (VP 3)
   []
   [Produce]
 
@@ -457,7 +457,7 @@ malevolentLifeforms = World
   "MALEVOLENT LIFEFORMS"
   (Defense 4)
   (Production Genes)
-  (Intrinsic 2)
+  (VP 2)
   []
   [Explore, Produce]
 
@@ -466,7 +466,7 @@ merchantWorld = World
   "MERCHANT WORLD"
   (Payment 4)
   Gray
-  (Intrinsic 2)
+  (VP 2)
   []
   [Trade, Consume]
 
@@ -475,7 +475,7 @@ miningWorld = World
   "MINING WORLD"
   (Payment 3)
   (Production Rare)
-  (Intrinsic 2)
+  (VP 2)
   []
   [Produce]
 
@@ -484,7 +484,7 @@ newEarth = World
   "NEW EARTH"
   (Payment 5)
   (Production Rare)
-  (Intrinsic 3)
+  (VP 3)
   []
   [Consume, Produce]
 
@@ -493,7 +493,7 @@ newSparta = World
   "NEW SPARTA"
   (Defense 2)
   Gray
-  (Intrinsic 1)
+  (VP 1)
   []
   [Settle]
 
@@ -502,7 +502,7 @@ newSurvivalists = World
   "NEW SURVIVALISTS"
   (Defense 1)
   (Production Novelty)
-  (Intrinsic 1)
+  (VP 1)
   []
   [Consume, Produce]
 
@@ -511,7 +511,7 @@ newVinland = World
   "NEW VINLAND"
   (Payment 2)
   (Production Novelty)
-  (Intrinsic 1)
+  (VP 1)
   []
   [Consume, Produce]
 
@@ -520,7 +520,7 @@ oldEarth = World
   "OLD EARTH"
   (Payment 3)
   Gray
-  (Intrinsic 2)
+  (VP 2)
   []
   [Trade, Consume]
 
@@ -529,7 +529,7 @@ outlawWorld = World
   "OUTLAW WORLD"
   (Defense 1)
   Gray
-  (Intrinsic 1)
+  (VP 1)
   []
   [Consume]
 
@@ -538,7 +538,7 @@ pilgrimageWorld = World
   "PILGRIMAGE WORLD"
   (Payment 0)
   Gray
-  (Intrinsic 2)
+  (VP 2)
   []
   [Consume]
 
@@ -547,7 +547,7 @@ pirateWorld = World
   "PIRATE WORLD"
   (Defense 3)
   (WindFall Novelty)
-  (Intrinsic 2)
+  (VP 2)
   []
   [Trade]
 
@@ -556,7 +556,7 @@ plagueWorld = World
   "PLAGUE WORLD"
   (Payment 3)
   (Production Genes)
-  (Intrinsic 0)
+  (VP 0)
   []
   [Consume, Produce]
 
@@ -565,7 +565,7 @@ preSentientRace = World
   "PRE-SENTIENT RACE"
   (Payment 2)
   (WindFall Genes)
-  (Intrinsic 1)
+  (VP 1)
   []
   []
 
@@ -574,7 +574,7 @@ prosperousWorld = World
   "PROSPEROUS WORLD"
   (Payment 3)
   (Production Novelty)
-  (Intrinsic 2)
+  (VP 2)
   []
   [Consume, Produce]
 
@@ -583,7 +583,7 @@ radioactiveWorld = World
   "RADIOACTIVE WORLD"
   (Payment 2)
   (WindFall Rare)
-  (Intrinsic 1)
+  (VP 1)
   []
   []
 
@@ -592,7 +592,7 @@ rebelBase = World
   "REBEL BASE"
   (Defense 6)
   Gray
-  (Intrinsic 6)
+  (VP 6)
   [Rebel]
   []
 
@@ -601,7 +601,7 @@ rebelFuelCache = World
   "REBEL FUEL CACHE"
   (Defense 1)
   Gray
-  (Intrinsic 1)
+  (VP 1)
   [Rebel]
   []
 
@@ -610,7 +610,7 @@ rebelHomeworld = World
   "REBEL HOMEWORLD"
   (Defense 7)
   Gray
-  (Intrinsic 7)
+  (VP 7)
   [Rebel]
   []
 
@@ -619,7 +619,7 @@ rebelMiners = World
   "REBEL MINERS"
   (Defense 2)
   (Production Rare)
-  (Intrinsic 1)
+  (VP 1)
   [Rebel]
   [Produce]
 
@@ -628,7 +628,7 @@ rebelOutpost = World
   "REBEL OUTPOST"
   (Defense 5)
   Gray
-  (Intrinsic 5)
+  (VP 5)
   []
   [Settle]
 
@@ -637,7 +637,7 @@ rebelUnderground = World
   "REBEL UNDERGROUND"
   (Defense 3)
   Gray
-  (Intrinsic 4)
+  (VP 4)
   [Rebel]
   [Produce]
 
@@ -646,7 +646,7 @@ rebelWarriorRace = World
   "REBEL WARRIOR RACE"
   (Defense 3)
   (WindFall Genes)
-  (Intrinsic 2)
+  (VP 2)
   [Rebel]
   [Settle]
 
@@ -655,7 +655,7 @@ refugeeWorld = World
   "REFUGEE WORLD"
   (Payment 0)
   (WindFall Novelty)
-  (Intrinsic 1)
+  (VP 1)
   []
   [Settle]
 
@@ -664,7 +664,7 @@ reptilianUpliftRace = World
   "REPTILIAN UPLIFT RACE"
   (Defense 2)
   (WindFall Genes)
-  (Intrinsic 2)
+  (VP 2)
   [Uplift, Chromosome]
   []
 
@@ -673,7 +673,7 @@ runawayRobots = World
   "RUNAWAY ROBOTS"
   (Defense 1)
   (WindFall Rare)
-  (Intrinsic 1)
+  (VP 1)
   []
   [Produce]
 
@@ -682,7 +682,7 @@ secludedWorld = World
   "SECLUDED WORLD"
   (Payment 1)
   (Production Novelty)
-  (Intrinsic 1)
+  (VP 1)
   []
   [Consume, Produce]
 
@@ -691,7 +691,7 @@ spacePort = World
   "SPACE PORT"
   (Payment 2)
   (Production Novelty)
-  (Intrinsic 1)
+  (VP 1)
   []
   [Trade, Produce]
 
@@ -700,7 +700,7 @@ spiceWorld = World
   "SPICE WORLD"
   (Payment 2)
   (Production Novelty)
-  (Intrinsic 1)
+  (VP 1)
   []
   [Trade, Produce]
 
@@ -709,7 +709,7 @@ starNomadLair = World
   "STAR NOMAD LAIR"
   (Defense 1)
   (WindFall Novelty)
-  (Intrinsic 1)
+  (VP 1)
   []
   [Explore, Trade]
 
@@ -718,7 +718,7 @@ terraformedWorld = World
   "TERRAFORMED WORLD"
   (Payment 5)
   Gray
-  (Intrinsic 5)
+  (VP 5)
   []
   [Consume]
 
@@ -727,7 +727,7 @@ theLastOfTheUpliftGnarssh = World
   "THE LAST OF THE UPLIFT GNARSSH"
   (Defense 1)
   (WindFall Genes)
-  (Intrinsic 0)
+  (VP 0)
   [Uplift, Chromosome]
   []
 
@@ -736,7 +736,7 @@ touristWorld = World
   "TOURIST WORLD"
   (Payment 4)
   Gray
-  (Intrinsic 2)
+  (VP 2)
   []
   [Consume]
 
@@ -841,8 +841,8 @@ tradeLeague = Development
 -- Collections
 -------------------------------------------------------------------------------
 
-baseStartWorld :: [Card]
-baseStartWorld = [
+baseStartWorlds :: [Card]
+baseStartWorlds = [
     oldEarth
   , epsilonEridani
   , alphaCentauri
