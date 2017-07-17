@@ -1,13 +1,19 @@
-{-# LANGUAGE OverloadedStrings #-}
-
--- | Core Module contains data definitions.
+-- | Data definitions of basic terminologies.
 module Game.RftG.Core where
 
-import qualified Data.Text as T
 
 -------------------------------------------------------------------------------
--- Data definition
+-- Data definitions
 -------------------------------------------------------------------------------
+
+data Phase
+  = Explore
+  | Develop
+  | Settle
+  | Trade
+  | Consume
+  | Produce
+    deriving (Eq, Read, Show)
 
 data Keywords
   = Rebel         -- REBEL, red circle, red diamond
@@ -39,7 +45,7 @@ data VP
     deriving (Eq, Read, Show)
 
 data WorldType
-  = None             -- Gray world
+  = Gray             -- Gray world
   | WindFall Good    -- Windfall world
   | Production Good  -- Production world
     deriving (Eq, Read, Show)
