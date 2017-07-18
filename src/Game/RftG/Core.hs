@@ -27,7 +27,8 @@ data Keywords
     deriving (Eq, Read, Show)
 
 data Good
-  = Novelty          -- Blue
+  = AnyGood          -- Any good, ALIEN OORT CLOUD REFINERY
+  | Novelty          -- Blue
   | Rare             -- Brown
   | Genes            -- Green
   | AlienTechnology  -- Yellow

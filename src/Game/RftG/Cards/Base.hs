@@ -142,7 +142,7 @@ replicantRobots = Development
 
 researchLabs :: Card
 researchLabs = Development
-  "RESEARCH lABS"
+  "RESEARCH LABS"
   (Payment 4)
   (VP 2)
   []
@@ -261,7 +261,7 @@ blackMarketTradingWorld = World
   Gray
   (VP 2)
   []
-  [Trade]
+  [Consume]
 
 blasterGemMines :: Card
 blasterGemMines = World
@@ -440,7 +440,7 @@ lostAlienWarship = World
   (Defense 5)
   (WindFall AlienTechnology)
   (VP 3)
-  []
+  [Alien]
   [Settle]
 
 lostSpeciesArkWorld :: Card
@@ -629,7 +629,7 @@ rebelOutpost = World
   (Defense 5)
   Gray
   (VP 5)
-  []
+  [Rebel]
   [Settle]
 
 rebelUnderground :: Card
