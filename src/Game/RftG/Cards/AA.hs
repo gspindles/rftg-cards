@@ -15,7 +15,7 @@ import Game.RftG.Card
 alienResearchShip :: Card
 alienResearchShip = Development
   "ALIEN RESEARCH SHIP"
-  (Payment 4)
+  (Cost 4)
   (VP 2)
   [Alien]
   [Explore, Settle, Produce]
@@ -23,7 +23,7 @@ alienResearchShip = Development
 alienSurveyTechnology :: Card
 alienSurveyTechnology = Development
   "ALIEN SURVEY TECHNOLOGY"
-  (Payment 1)
+  (Cost 1)
   (VP 1)
   [Alien]
   [Explore, Settle]
@@ -31,7 +31,7 @@ alienSurveyTechnology = Development
 galacticInvestors :: Card
 galacticInvestors = Development
   "GALACTIC INVESTORS"
-  (Payment 5)
+  (Cost 5)
   (VP 3)
   []
   [Develop, Produce]
@@ -39,7 +39,7 @@ galacticInvestors = Development
 imperiumStealthTactics :: Card
 imperiumStealthTactics = Development
   "IMPERIUM STEALTH TACTICS"
-  (Payment 2)
+  (Cost 2)
   (VP 1)
   [Imperium]
   [Settle]
@@ -47,7 +47,7 @@ imperiumStealthTactics = Development
 imperiumSupplyConvoy :: Card
 imperiumSupplyConvoy = Development
   "IMPERIUM SUPPLY CONVOY"
-  (Payment 3)
+  (Cost 3)
   (VP 2)
   [Imperium]
   [Settle, Produce]
@@ -55,7 +55,7 @@ imperiumSupplyConvoy = Development
 scientificCruisers :: Card
 scientificCruisers = Development
   "SCIENTIFIC CRUISERS"
-  (Payment 2)
+  (Cost 2)
   (VP 1)
   []
   [Explore, Settle, Consume]
@@ -63,7 +63,7 @@ scientificCruisers = Development
 terraformingProject :: Card
 terraformingProject = Development
   "TERRAFORMING PROJECT"
-  (Payment 3)
+  (Cost 3)
   (VP 0)
   [Terraforming]
   [Settle, Produce]
@@ -71,7 +71,7 @@ terraformingProject = Development
 alienArtifactHunters :: Card
 alienArtifactHunters = World
   "ALIEN ARTIFACT HUNTERS"
-  (Payment 3)
+  (Cost 3)
   Gray
   (VP 1)
   [Alien]
@@ -80,7 +80,7 @@ alienArtifactHunters = World
 alienFuelRefinery :: Card
 alienFuelRefinery = World
   "ALIEN FUEL REFINERY"
-  (Payment 2)
+  (Cost 2)
   (Production AlienTechnology)
   (VP 2)
   [Alien]
@@ -98,7 +98,7 @@ alienSentinels = World
 alienUpliftChamber :: Card
 alienUpliftChamber = World
   "ALIEN UPLIFT CHAMBER"
-  (Payment 6)
+  (Cost 6)
   (WindFall AlienTechnology)
   QuestionMark
   [Alien, Uplift]
@@ -125,7 +125,7 @@ arborealUpliftRace = World
 deepSpaceSymbiontsLTD :: Card
 deepSpaceSymbiontsLTD = World
   "DEEP SPACE SYMBIONTS, LTD."
-  (Payment 3)
+  (Cost 3)
   (WindFall Genes)
   (VP 1)
   []
@@ -134,7 +134,7 @@ deepSpaceSymbiontsLTD = World
 designerSpeciesULTD :: Card
 designerSpeciesULTD = World
   "DESIGNER SPECIES, ULTD."
-  (Payment 5)
+  (Cost 5)
   (Production Genes)
   (VP 3)
   []
@@ -152,7 +152,7 @@ frontierCaptital = World
 galacticNewsHub :: Card
 galacticNewsHub = World
   "GALACTIC NEWS HUB"
-  (Payment 4)
+  (Cost 4)
   (WindFall Novelty)
   (VP 2)
   []
@@ -161,7 +161,7 @@ galacticNewsHub = World
 galacticSurveyHeadquarters :: Card
 galacticSurveyHeadquarters = World
   "GALACTIC SURVEY HEADQUARTERS"
-  (Payment 2)
+  (Cost 2)
   (Production Novelty)
   (VP 1)
   []
@@ -188,7 +188,7 @@ imperiumFifthColumn = World
 interstellarTradePort :: Card
 interstellarTradePort = World
   "INTERSTELLAR TRADE PORT"
-  (Payment 5)
+  (Cost 5)
   (Production Novelty)
   (VP 3)
   []
@@ -197,7 +197,7 @@ interstellarTradePort = World
 jumpdriveFuelRefinery :: Card
 jumpdriveFuelRefinery = World
   "JUMPDRIVE FUEL REFINERY"
-  (Payment 3)
+  (Cost 3)
   (Production Rare)
   (VP 2)
   []
@@ -215,7 +215,7 @@ mercenaryGuild = World
 oreRichWorld :: Card
 oreRichWorld = World
   "ORE-RICH WORLD"
-  (Payment 2)
+  (Cost 2)
   (Production Rare)
   (VP 1)
   []
@@ -278,7 +278,7 @@ sentientRobots = World
 terraformingColony :: Card
 terraformingColony = World
   "TERRAFORMING COLONY"
-  (Payment 5)
+  (Cost 5)
   (WindFall Novelty)
   (VP 2)
   [Terraforming]
@@ -287,7 +287,7 @@ terraformingColony = World
 transhipPoint :: Card
 transhipPoint = World
   "TRANSHIP POINT"
-  (Payment 0)
+  (Cost 0)
   Gray
   (VP 2)
   []
@@ -296,7 +296,7 @@ transhipPoint = World
 upliftResearchers :: Card
 upliftResearchers = World
   "UPLIFT RESEARCHERS"
-  (Payment 2)
+  (Cost 2)
   Gray
   (VP 1)
   [Uplift]
@@ -305,7 +305,7 @@ upliftResearchers = World
 alienResearchers :: Card
 alienResearchers = Development
   "ALIEN RESEARCHERS"
-  (Payment 6)
+  (Cost 6)
   QuestionMark
   [Alien]
   [Settle, Consume]
@@ -313,7 +313,7 @@ alienResearchers = Development
 galacticExpansionists :: Card
 galacticExpansionists = Development
   "GALACTIC EXPANSIONISTS"
-  (Payment 6)
+  (Cost 6)
   QuestionMark
   []
   [Develop, Settle, Consume]
@@ -321,7 +321,7 @@ galacticExpansionists = Development
 imperiumWarFaction :: Card
 imperiumWarFaction = Development
   "IMPERIUM WAR FACTION"
-  (Payment 6)
+  (Cost 6)
   QuestionMark
   [Imperium]
   [Settle, Produce]
@@ -329,7 +329,7 @@ imperiumWarFaction = Development
 terraformingUnlimited :: Card
 terraformingUnlimited = Development
   "TERRAFORMING UNLIMITED"
-  (Payment 3)
+  (Cost 3)
   QuestionMark
   [Terraforming]
   [Explore, Settle, Consume]
@@ -337,7 +337,7 @@ terraformingUnlimited = Development
 upliftAlliance :: Card
 upliftAlliance = Development
   "UPLIFT ALLIANCE"
-  (Payment 6)
+  (Cost 6)
   QuestionMark
   [Uplift]
   [Settle, Produce]
@@ -345,7 +345,7 @@ upliftAlliance = Development
 wormholeProspectors :: Card
 wormholeProspectors = Development
   "WORMHOLE PROSPECTORS"
-  (Payment 6)
+  (Cost 6)
   QuestionMark
   []
   [Settle, Trade, Consume]

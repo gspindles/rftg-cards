@@ -15,7 +15,7 @@ import Game.RftG.Card
 galacticAdvertisers :: Card
 galacticAdvertisers = Development
   "GALACTIC ADVERTISERS"
-  (Payment 3)
+  (Cost 3)
   (VP 2)
   []
   [Trade, Consume]
@@ -23,7 +23,7 @@ galacticAdvertisers = Development
 galacticSalon :: Card
 galacticSalon = Development
   "GALACTIC SALON"
-  (Payment 4)
+  (Cost 4)
   (VP 2)
   []
   [Consume]
@@ -31,7 +31,7 @@ galacticSalon = Development
 imperiumCloakingTechnology :: Card
 imperiumCloakingTechnology = Development
   "IMPERIUM CLOAKING TECHNOLOGY"
-  (Payment 1)
+  (Cost 1)
   (VP 1)
   [Imperium]
   [Settle]
@@ -39,7 +39,7 @@ imperiumCloakingTechnology = Development
 imperiumTroops :: Card
 imperiumTroops = Development
   "IMPERIUM TROOPS"
-  (Payment 1)
+  (Cost 1)
   (VP 1)
   [Imperium]
   [Settle]
@@ -47,7 +47,7 @@ imperiumTroops = Development
 mercenaryFleet :: Card
 mercenaryFleet = Development
   "MERCENARY FLEET"
-  (Payment 3)
+  (Cost 3)
   (VP 1)
   []
   [Settle]
@@ -55,7 +55,7 @@ mercenaryFleet = Development
 panGalacticResearch :: Card
 panGalacticResearch = Development
   "PAN-GALACTIC RESEARCH"
-  (Payment 6)
+  (Cost 6)
   (VP 4)
   []
   [Explore, Develop, Consume]
@@ -63,7 +63,7 @@ panGalacticResearch = Development
 rndCrashProgram :: Card
 rndCrashProgram = Development
   "R&D CRASH PROGRAM"
-  (Payment 1)
+  (Cost 1)
   (VP 0)
   []
   [Develop, Consume]
@@ -71,7 +71,7 @@ rndCrashProgram = Development
 rebelPact :: Card
 rebelPact = Development
   "REBEL PACT"
-  (Payment 1)
+  (Cost 1)
   (VP 1)
   [Rebel]
   [Explore, Settle]
@@ -79,7 +79,7 @@ rebelPact = Development
 abandonedAlienUpliftCamp :: Card
 abandonedAlienUpliftCamp = World
   "ABANDONED ALIEN UPLIFT CAMP"
-  (Payment 1)
+  (Cost 1)
   Gray
   (VP 2)
   [Alien, Uplift]
@@ -88,7 +88,7 @@ abandonedAlienUpliftCamp = World
 alienDataRepository :: Card
 alienDataRepository = World
   "ALIEN DATA REPOSITORY"
-  (Payment 7)
+  (Cost 7)
   (Production AlienTechnology)
   (VP 6)
   [Alien]
@@ -133,7 +133,7 @@ devolvedUpliftRace = World
 dyingColony :: Card
 dyingColony = World
   "DYING COLONY"
-  (Payment 0)
+  (Cost 0)
   (WindFall Novelty)
   (VP 0)
   []
@@ -142,7 +142,7 @@ dyingColony = World
 galacticDevelopers :: Card
 galacticDevelopers = World
   "GALACTIC DEVELOPERS"
-  (Payment 2)
+  (Cost 2)
   Gray
   (VP 1)
   []
@@ -151,7 +151,7 @@ galacticDevelopers = World
 gemSmugglers :: Card
 gemSmugglers = World
   "GEM SMUGGLERS"
-  (Payment 3)
+  (Cost 3)
   (WindFall Rare)
   (VP 1)
   []
@@ -160,7 +160,7 @@ gemSmugglers = World
 geneDesigners :: Card
 geneDesigners = World
   "GENE DESIGNERS"
-  (Payment 6)
+  (Cost 6)
   (Production Genes)
   (VP 3)
   []
@@ -178,7 +178,7 @@ hiddenFortress = World
 imperiumBlasterGemConsortium :: Card
 imperiumBlasterGemConsortium = World
   "IMPERIUM BLASTER GEM CONSORTIUM"
-  (Payment 6)
+  (Cost 6)
   (Production Rare)
   (VP 4)
   [Imperium]
@@ -187,7 +187,7 @@ imperiumBlasterGemConsortium = World
 imperiumWarlord :: Card
 imperiumWarlord = World
   "IMPERIUM WARLORD"
-  (Payment 2)
+  (Cost 2)
   Gray
   (VP 2)
   [Imperium]
@@ -205,7 +205,7 @@ insectUpliftRace = World
 interstellarProspectors :: Card
 interstellarProspectors = World
   "INTERSTELLAR PROSPECTORS"
-  (Payment 3)
+  (Cost 3)
   (Production Rare)
   (VP 2)
   []
@@ -223,7 +223,7 @@ primitiveRebelWorld = World
 rebelCantina :: Card
 rebelCantina = World
   "REBEL CANTINA"
-  (Payment 2)
+  (Cost 2)
   Gray
   (VP 0)
   [Rebel]
@@ -250,7 +250,7 @@ rebelStronghold = World
 smugglingWorld :: Card
 smugglingWorld = World
   "SMUGGLING WORLD"
-  (Payment 1)
+  (Cost 1)
   (Production Novelty)
   (VP 0)
   []
@@ -259,7 +259,7 @@ smugglingWorld = World
 tradingOutpost :: Card
 tradingOutpost = World
   "TRADING OUTPOST"
-  (Payment 1)
+  (Cost 1)
   Gray
   (VP 1)
   []
@@ -268,7 +268,7 @@ tradingOutpost = World
 universalSymbionts :: Card
 universalSymbionts = World
   "UNIVERSAL SYMBIONTS"
-  (Payment 3)
+  (Cost 3)
   (WindFall Genes)
   (VP 1)
   []
@@ -277,7 +277,7 @@ universalSymbionts = World
 galacticBankers :: Card
 galacticBankers = Development
   "GALACTIC BANKERS"
-  (Payment 6)
+  (Cost 6)
   QuestionMark
   []
   [Develop, Consume]
@@ -285,7 +285,7 @@ galacticBankers = Development
 galacticExchange :: Card
 galacticExchange = Development
   "GALACTIC EXCHANGE"
-  (Payment 6)
+  (Cost 6)
   QuestionMark
   []
   [Consume]
@@ -293,7 +293,7 @@ galacticExchange = Development
 imperiumSeat :: Card
 imperiumSeat = Development
   "IMPERIUM SEAT"
-  (Payment 6)
+  (Cost 6)
   QuestionMark
   [Imperium]
   [Settle]
@@ -301,7 +301,7 @@ imperiumSeat = Development
 prospectingGuild :: Card
 prospectingGuild = Development
   "PROSPECTING GUILD"
-  (Payment 6)
+  (Cost 6)
   QuestionMark
   []
   [Explore, Trade, Consume]
@@ -309,7 +309,7 @@ prospectingGuild = Development
 rebelAlliance :: Card
 rebelAlliance = Development
   "REBEL ALLIANCE"
-  (Payment 6)
+  (Cost 6)
   QuestionMark
   [Rebel]
   [Settle]
@@ -317,7 +317,7 @@ rebelAlliance = Development
 upliftCode :: Card
 upliftCode = Development
   "UPLIFT CODE"
-  (Payment 6)
+  (Cost 6)
   QuestionMark
   [Uplift]
   [Produce]

@@ -15,7 +15,7 @@ import Game.RftG.Card
 colonyShip :: Card
 colonyShip = Development
   "COLONY SHIP"
-  (Payment 2)
+  (Cost 2)
   (VP 1)
   []
   [Settle]
@@ -23,7 +23,7 @@ colonyShip = Development
 consumerMarkets :: Card
 consumerMarkets = Development
   "CONSUMER MARKETS"
-  (Payment 5)
+  (Cost 5)
   (VP 3)
   []
   [Consume, Produce]
@@ -31,7 +31,7 @@ consumerMarkets = Development
 contactSpecialist :: Card
 contactSpecialist = Development
   "CONTACT SPECIALIST"
-  (Payment 1)
+  (Cost 1)
   (VP 1)
   []
   [Settle]
@@ -39,7 +39,7 @@ contactSpecialist = Development
 deficitSpending :: Card
 deficitSpending = Development
   "DEFICIT SPENDING"
-  (Payment 2)
+  (Cost 2)
   (VP 1)
   []
   [Consume]
@@ -47,7 +47,7 @@ deficitSpending = Development
 diversifiedEconomy :: Card
 diversifiedEconomy = Development
   "DIVERSIFIED ECONOMY"
-  (Payment 4)
+  (Cost 4)
   (VP 2)
   []
   [Consume, Produce]
@@ -55,7 +55,7 @@ diversifiedEconomy = Development
 dropShips :: Card
 dropShips = Development
   "DROP SHIPS"
-  (Payment 4)
+  (Cost 4)
   (VP 2)
   []
   [Settle]
@@ -63,7 +63,7 @@ dropShips = Development
 expeditionForce :: Card
 expeditionForce = Development
   "EXPEDITION FORCE"
-  (Payment 1)
+  (Cost 1)
   (VP 1)
   []
   [Explore, Settle]
@@ -71,7 +71,7 @@ expeditionForce = Development
 exportDuties :: Card
 exportDuties = Development
   "EXPORT DUTIES"
-  (Payment 1)
+  (Cost 1)
   (VP 1)
   []
   [Trade]
@@ -79,7 +79,7 @@ exportDuties = Development
 geneticsLab :: Card
 geneticsLab = Development
   "GENETICS LAB"
-  (Payment 2)
+  (Cost 2)
   (VP 1)
   []
   [Trade, Produce]
@@ -87,7 +87,7 @@ geneticsLab = Development
 interstellarBank :: Card
 interstellarBank = Development
   "INTERSTELLAR BANK"
-  (Payment 2)
+  (Cost 2)
   (VP 1)
   []
   [Develop]
@@ -95,7 +95,7 @@ interstellarBank = Development
 investmentCredits :: Card
 investmentCredits = Development
   "INVESTMENT CREDITS"
-  (Payment 1)
+  (Cost 1)
   (VP 1)
   []
   [Develop]
@@ -103,7 +103,7 @@ investmentCredits = Development
 miningConglomerate :: Card
 miningConglomerate = Development
   "MINING CONGLOMERATE"
-  (Payment 3)
+  (Cost 3)
   (VP 2)
   []
   [Trade, Consume, Produce]
@@ -111,7 +111,7 @@ miningConglomerate = Development
 miningRobots :: Card
 miningRobots = Development
   "MINING ROBOTS"
-  (Payment 2)
+  (Cost 2)
   (VP 1)
   []
   [Settle, Produce]
@@ -119,7 +119,7 @@ miningRobots = Development
 newMilitaryTactics :: Card
 newMilitaryTactics = Development
   "NEW MILITARY TACTICS"
-  (Payment 1)
+  (Cost 1)
   (VP 1)
   []
   [Settle]
@@ -127,7 +127,7 @@ newMilitaryTactics = Development
 publicWorks :: Card
 publicWorks = Development
   "PUBLIC WORKS"
-  (Payment 1)
+  (Cost 1)
   (VP 1)
   []
   [Develop, Consume]
@@ -135,7 +135,7 @@ publicWorks = Development
 replicantRobots :: Card
 replicantRobots = Development
   "REPLICANT ROBOTS"
-  (Payment 4)
+  (Cost 4)
   (VP 2)
   []
   [Settle]
@@ -143,7 +143,7 @@ replicantRobots = Development
 researchLabs :: Card
 researchLabs = Development
   "RESEARCH LABS"
-  (Payment 4)
+  (Cost 4)
   (VP 2)
   []
   [Explore, Consume, Produce]
@@ -151,7 +151,7 @@ researchLabs = Development
 spaceMarines :: Card
 spaceMarines = Development
   "SPACE MARINES"
-  (Payment 2)
+  (Cost 2)
   (VP 1)
   []
   [Settle]
@@ -159,7 +159,7 @@ spaceMarines = Development
 terraformingRobots :: Card
 terraformingRobots = Development
   "TERRAFORMING ROBOTS"
-  (Payment 3)
+  (Cost 3)
   (VP 2)
   [Terraforming]
   [Settle, Consume]
@@ -185,7 +185,7 @@ alienRobotSentry = World
 alienRoboticFactory :: Card
 alienRoboticFactory = World
   "ALIEN ROBOTIC FACTORY"
-  (Payment 6)
+  (Cost 6)
   (Production AlienTechnology)
   (VP 5)
   [Alien]
@@ -203,7 +203,7 @@ alienRosettaStoneWorld = World
 alphaCentauri :: Card
 alphaCentauri = World
   "ALPHA CENTAURI"
-  (Payment 2)
+  (Cost 2)
   (WindFall Rare)
   (VP 0)
   []
@@ -221,7 +221,7 @@ aquaticUpliftRace = World
 artistColony :: Card
 artistColony = World
   "ARTIST COLONY"
-  (Payment 1)
+  (Cost 1)
   (Production Novelty)
   (VP 1)
   []
@@ -230,7 +230,7 @@ artistColony = World
 asteroidBelt :: Card
 asteroidBelt = World
   "ASTEROID BELT"
-  (Payment 2)
+  (Cost 2)
   (WindFall Rare)
   (VP 1)
   []
@@ -248,7 +248,7 @@ avianUpliftRace = World
 bioHazardMiningWorld :: Card
 bioHazardMiningWorld = World
   "BIO-HAZARD MINING WORLD"
-  (Payment 3)
+  (Cost 3)
   (Production Rare)
   (VP 2)
   []
@@ -257,7 +257,7 @@ bioHazardMiningWorld = World
 blackMarketTradingWorld :: Card
 blackMarketTradingWorld = World
   "BLACK MARKET TRADING WORLD"
-  (Payment 3)
+  (Cost 3)
   Gray
   (VP 2)
   []
@@ -266,7 +266,7 @@ blackMarketTradingWorld = World
 blasterGemMines :: Card
 blasterGemMines = World
   "BLASTER GEM MINES"
-  (Payment 3)
+  (Cost 3)
   (WindFall Rare)
   (VP 2)
   []
@@ -275,7 +275,7 @@ blasterGemMines = World
 cometZone :: Card
 cometZone = World
   "COMET ZONE"
-  (Payment 3)
+  (Cost 3)
   (Production Rare)
   (VP 2)
   []
@@ -284,7 +284,7 @@ cometZone = World
 desertedAlienColony :: Card
 desertedAlienColony = World
   "DESERTED ALIEN COLONY"
-  (Payment 5)
+  (Cost 5)
   (WindFall AlienTechnology)
   (VP 4)
   [Alien]
@@ -293,7 +293,7 @@ desertedAlienColony = World
 desertedAlienLibrary :: Card
 desertedAlienLibrary = World
   "DESERTED ALIEN LIBRARY"
-  (Payment 6)
+  (Cost 6)
   (WindFall AlienTechnology)
   (VP 5)
   [Alien]
@@ -302,7 +302,7 @@ desertedAlienLibrary = World
 desertedAlienOutpost :: Card
 desertedAlienOutpost = World
   "DESERTED ALIEN OUTPOST"
-  (Payment 4)
+  (Cost 4)
   (WindFall AlienTechnology)
   (VP 3)
   [Alien]
@@ -311,7 +311,7 @@ desertedAlienOutpost = World
 destroyedWorld :: Card
 destroyedWorld = World
   "DESTROYED WORLD"
-  (Payment 1)
+  (Cost 1)
   (WindFall Rare)
   (VP 0)
   []
@@ -320,7 +320,7 @@ destroyedWorld = World
 distantWorld :: Card
 distantWorld = World
   "DISTANT WORLD"
-  (Payment 4)
+  (Cost 4)
   (Production Genes)
   (VP 2)
   []
@@ -329,7 +329,7 @@ distantWorld = World
 earthsLostColony :: Card
 earthsLostColony = World
   "EARTH'S LOST COLONY"
-  (Payment 2)
+  (Cost 2)
   (Production Novelty)
   (VP 1)
   []
@@ -338,7 +338,7 @@ earthsLostColony = World
 empathWorld :: Card
 empathWorld = World
   "EMPATH WORLD"
-  (Payment 1)
+  (Cost 1)
   (WindFall Rare)
   (VP 1)
   []
@@ -347,7 +347,7 @@ empathWorld = World
 epsilonEridani :: Card
 epsilonEridani = World
   "EPSILON ERIDANI"
-  (Payment 2)
+  (Cost 2)
   Gray
   (VP 1)
   []
@@ -356,7 +356,7 @@ epsilonEridani = World
 expandingColony :: Card
 expandingColony = World
   "EXPANDING COLONY"
-  (Payment 1)
+  (Cost 1)
   Gray
   (VP 1)
   []
@@ -374,7 +374,7 @@ formerPenalColony = World
 galacticEngineers :: Card
 galacticEngineers = World
   "GALACTIC ENGINEERS"
-  (Payment 2)
+  (Cost 2)
   Gray
   (VP 1)
   []
@@ -383,7 +383,7 @@ galacticEngineers = World
 galacticResort :: Card
 galacticResort = World
   "GALACTIC RESORT"
-  (Payment 3)
+  (Cost 3)
   (WindFall Novelty)
   (VP 2)
   []
@@ -392,7 +392,7 @@ galacticResort = World
 galacticTrendsetters :: Card
 galacticTrendsetters = World
   "GALACTIC TRENDSETTERS"
-  (Payment 5)
+  (Cost 5)
   Gray
   (VP 3)
   []
@@ -401,7 +401,7 @@ galacticTrendsetters = World
 gamblingWorld :: Card
 gamblingWorld = World
   "GAMBLING WORLD"
-  (Payment 1)
+  (Cost 1)
   Gray
   (VP 1)
   []
@@ -410,7 +410,7 @@ gamblingWorld = World
 gemWorld :: Card
 gemWorld = World
   "GEM WORLD"
-  (Payment 2)
+  (Cost 2)
   (Production Novelty)
   (VP 1)
   []
@@ -419,7 +419,7 @@ gemWorld = World
 imperiumArmamentsWorld :: Card
 imperiumArmamentsWorld = World
   "IMPERIUM ARMAMENTS WORLD"
-  (Payment 4)
+  (Cost 4)
   (Production Rare)
   (VP 2)
   [Imperium]
@@ -446,7 +446,7 @@ lostAlienWarship = World
 lostSpeciesArkWorld :: Card
 lostSpeciesArkWorld = World
   "LOST SPECIES ARK WORLD"
-  (Payment 5)
+  (Cost 5)
   (Production Genes)
   (VP 3)
   []
@@ -464,7 +464,7 @@ malevolentLifeforms = World
 merchantWorld :: Card
 merchantWorld = World
   "MERCHANT WORLD"
-  (Payment 4)
+  (Cost 4)
   Gray
   (VP 2)
   []
@@ -473,7 +473,7 @@ merchantWorld = World
 miningWorld :: Card
 miningWorld = World
   "MINING WORLD"
-  (Payment 3)
+  (Cost 3)
   (Production Rare)
   (VP 2)
   []
@@ -482,7 +482,7 @@ miningWorld = World
 newEarth :: Card
 newEarth = World
   "NEW EARTH"
-  (Payment 5)
+  (Cost 5)
   (Production Rare)
   (VP 3)
   []
@@ -509,7 +509,7 @@ newSurvivalists = World
 newVinland :: Card
 newVinland = World
   "NEW VINLAND"
-  (Payment 2)
+  (Cost 2)
   (Production Novelty)
   (VP 1)
   []
@@ -518,7 +518,7 @@ newVinland = World
 oldEarth :: Card
 oldEarth = World
   "OLD EARTH"
-  (Payment 3)
+  (Cost 3)
   Gray
   (VP 2)
   []
@@ -536,7 +536,7 @@ outlawWorld = World
 pilgrimageWorld :: Card
 pilgrimageWorld = World
   "PILGRIMAGE WORLD"
-  (Payment 0)
+  (Cost 0)
   Gray
   (VP 2)
   []
@@ -554,7 +554,7 @@ pirateWorld = World
 plagueWorld :: Card
 plagueWorld = World
   "PLAGUE WORLD"
-  (Payment 3)
+  (Cost 3)
   (Production Genes)
   (VP 0)
   []
@@ -563,7 +563,7 @@ plagueWorld = World
 preSentientRace :: Card
 preSentientRace = World
   "PRE-SENTIENT RACE"
-  (Payment 2)
+  (Cost 2)
   (WindFall Genes)
   (VP 1)
   []
@@ -572,7 +572,7 @@ preSentientRace = World
 prosperousWorld :: Card
 prosperousWorld = World
   "PROSPEROUS WORLD"
-  (Payment 3)
+  (Cost 3)
   (Production Novelty)
   (VP 2)
   []
@@ -581,7 +581,7 @@ prosperousWorld = World
 radioactiveWorld :: Card
 radioactiveWorld = World
   "RADIOACTIVE WORLD"
-  (Payment 2)
+  (Cost 2)
   (WindFall Rare)
   (VP 1)
   []
@@ -653,7 +653,7 @@ rebelWarriorRace = World
 refugeeWorld :: Card
 refugeeWorld = World
   "REFUGEE WORLD"
-  (Payment 0)
+  (Cost 0)
   (WindFall Novelty)
   (VP 1)
   []
@@ -680,7 +680,7 @@ runawayRobots = World
 secludedWorld :: Card
 secludedWorld = World
   "SECLUDED WORLD"
-  (Payment 1)
+  (Cost 1)
   (Production Novelty)
   (VP 1)
   []
@@ -689,7 +689,7 @@ secludedWorld = World
 spacePort :: Card
 spacePort = World
   "SPACE PORT"
-  (Payment 2)
+  (Cost 2)
   (Production Novelty)
   (VP 1)
   []
@@ -698,7 +698,7 @@ spacePort = World
 spiceWorld :: Card
 spiceWorld = World
   "SPICE WORLD"
-  (Payment 2)
+  (Cost 2)
   (Production Novelty)
   (VP 1)
   []
@@ -716,7 +716,7 @@ starNomadLair = World
 terraformedWorld :: Card
 terraformedWorld = World
   "TERRAFORMED WORLD"
-  (Payment 5)
+  (Cost 5)
   Gray
   (VP 5)
   []
@@ -734,7 +734,7 @@ theLastOfTheUpliftGnarssh = World
 touristWorld :: Card
 touristWorld = World
   "TOURIST WORLD"
-  (Payment 4)
+  (Cost 4)
   Gray
   (VP 2)
   []
@@ -743,7 +743,7 @@ touristWorld = World
 alienTechInstitute :: Card
 alienTechInstitute = Development
   "ALIEN TECH INSTITUTE"
-  (Payment 6)
+  (Cost 6)
   QuestionMark
   [Alien]
   [Settle]
@@ -751,7 +751,7 @@ alienTechInstitute = Development
 freeTradeAssociation :: Card
 freeTradeAssociation = Development
   "FREE TRADE ASSOCIATION"
-  (Payment 6)
+  (Cost 6)
   QuestionMark
   []
   [Consume, Produce]
@@ -759,7 +759,7 @@ freeTradeAssociation = Development
 galacticFederation :: Card
 galacticFederation = Development
   "GALACTIC FEDERATION"
-  (Payment 6)
+  (Cost 6)
   QuestionMark
   []
   [Develop]
@@ -767,7 +767,7 @@ galacticFederation = Development
 galacticImperium :: Card
 galacticImperium = Development
   "GALACTIC IMPERIUM"
-  (Payment 6)
+  (Cost 6)
   QuestionMark
   [Imperium]
   [Settle]
@@ -775,7 +775,7 @@ galacticImperium = Development
 galacticRenaissance :: Card
 galacticRenaissance = Development
   "GALACTIC RENAISSANCE"
-  (Payment 6)
+  (Cost 6)
   QuestionMark
   []
   [Explore]
@@ -783,7 +783,7 @@ galacticRenaissance = Development
 galacticSurveySETI :: Card
 galacticSurveySETI = Development
   "GALACTIC SURVEY: SETI"
-  (Payment 6)
+  (Cost 6)
   QuestionMark
   []
   [Explore]
@@ -791,7 +791,7 @@ galacticSurveySETI = Development
 merchantGuild :: Card
 merchantGuild = Development
   "MERCHANT GUILD"
-  (Payment 6)
+  (Cost 6)
   QuestionMark
   []
   [Produce]
@@ -799,7 +799,7 @@ merchantGuild = Development
 miningLeague :: Card
 miningLeague = Development
   "MINING LEAGUE"
-  (Payment 6)
+  (Cost 6)
   QuestionMark
   []
   [Consume, Produce]
@@ -807,7 +807,7 @@ miningLeague = Development
 newEconomy :: Card
 newEconomy = Development
   "NEW ECONOMY"
-  (Payment 6)
+  (Cost 6)
   QuestionMark
   []
   [Consume]
@@ -815,7 +815,7 @@ newEconomy = Development
 newGalacticOrder :: Card
 newGalacticOrder = Development
   "NEW GALACTIC ORDER"
-  (Payment 6)
+  (Cost 6)
   QuestionMark
   []
   [Settle]
@@ -823,7 +823,7 @@ newGalacticOrder = Development
 panGalacticLeague :: Card
 panGalacticLeague = Development
   "PAN-GALACTIC LEAGUE"
-  (Payment 6)
+  (Cost 6)
   QuestionMark
   []
   [Settle, Produce]
@@ -831,7 +831,7 @@ panGalacticLeague = Development
 tradeLeague :: Card
 tradeLeague = Development
   "TRADE LEAGUE"
-  (Payment 6)
+  (Cost 6)
   QuestionMark
   []
   [Trade, Consume]

@@ -15,7 +15,7 @@ import Game.RftG.Card
 improvedLogistics :: Card
 improvedLogistics = Development
   "IMPROVED LOGISTICS"
-  (Payment 3)
+  (Cost 3)
   (VP 2)
   []
   [Settle]
@@ -23,7 +23,7 @@ improvedLogistics = Development
 spaceMercenaries :: Card
 spaceMercenaries = Development
   "SPACE MERCENARIES"
-  (Payment 1)
+  (Cost 1)
   (VP 0)
   []
   [Settle]
@@ -31,7 +31,7 @@ spaceMercenaries = Development
 alienToyShop :: Card
 alienToyShop = World
   "ALIEN TOY SHOP"
-  (Payment 3)
+  (Cost 3)
   (WindFall AlienTechnology)
   (VP 1)
   [Alien]
@@ -40,7 +40,7 @@ alienToyShop = World
 ancientRace :: Card
 ancientRace = World
   "ANCIENT RACE"
-  (Payment 2)
+  (Cost 2)
   (WindFall Genes)
   (VP 1)
   []
@@ -67,7 +67,7 @@ damagedAlienFactory = World
 desertedAlienWorld :: Card
 desertedAlienWorld = World
   "DESERTED ALIEN WORLD"
-  (Payment 1)
+  (Cost 1)
   Gray
   (VP 2)
   [Alien]
@@ -76,7 +76,7 @@ desertedAlienWorld = World
 doomedWorld :: Card
 doomedWorld = World
   "DOOMED WORLD"
-  (Payment 1)
+  (Cost 1)
   Gray
   (VP (-1))
   []
@@ -85,7 +85,7 @@ doomedWorld = World
 galacticBazzar :: Card
 galacticBazzar = World
   "GALACTIC BAZZAR"
-  (Payment 3)
+  (Cost 3)
   (WindFall Novelty)
   (VP 2)
   []
@@ -94,7 +94,7 @@ galacticBazzar = World
 galacticStudios :: Card
 galacticStudios = World
   "GALACTIC STUDIOS"
-  (Payment 5)
+  (Cost 5)
   (Production Novelty)
   (VP 3)
   []
@@ -130,7 +130,7 @@ rebelSympathizers = World
 separatistColony :: Card
 separatistColony = World
   "SEPARATIST COLONY"
-  (Payment 2)
+  (Cost 2)
   Gray
   (VP 1)
   []
@@ -148,7 +148,7 @@ smugglingLair = World
 volcanicWorld :: Card
 volcanicWorld = World
   "VOLCANIC WORLD"
-  (Payment 2)
+  (Cost 2)
   (Production Rare)
   (VP 1)
   []
@@ -157,7 +157,7 @@ volcanicWorld = World
 galacticGenomeProject :: Card
 galacticGenomeProject = Development
   "GALACTIC GENOME PROJECT"
-  (Payment 6)
+  (Cost 6)
   QuestionMark
   []
   [Consume]
@@ -165,7 +165,7 @@ galacticGenomeProject = Development
 imperiumLords :: Card
 imperiumLords = Development
   "IMPERIUM LORDS"
-  (Payment 6)
+  (Cost 6)
   QuestionMark
   [Imperium]
   [Produce]
@@ -173,7 +173,7 @@ imperiumLords = Development
 terraformingGuild :: Card
 terraformingGuild = Development
   "TERRAFORMING GUILD"
-  (Payment 6)
+  (Cost 6)
   QuestionMark
   [Terraforming]
   [Settle, Produce]

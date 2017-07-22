@@ -35,7 +35,7 @@ data Good
     deriving (Eq, Read, Show)
 
 data Cost
-  = Payment Int
+  = Cost Int
   | Defense Int
     deriving (Eq, Read, Show)
 

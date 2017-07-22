@@ -15,7 +15,7 @@ import Game.RftG.Card
 alienWeaponPlans :: Card
 alienWeaponPlans = Development
   "ALIEN WEAPON PLANS"
-  (Payment 1)
+  (Cost 1)
   (VP 1)
   [Alien]
   [Explore, Settle]
@@ -23,7 +23,7 @@ alienWeaponPlans = Development
 antiXenoAssaultTroops :: Card
 antiXenoAssaultTroops = Development
   "ANTI-XENO ASSAULT TROOPS"
-  (Payment 3)
+  (Cost 3)
   (VP 2)
   [AntiXeno]
   [Settle]
@@ -31,7 +31,7 @@ antiXenoAssaultTroops = Development
 antiXenoMilitia :: Card
 antiXenoMilitia = Development
   "ANTI-XENO MILITIA"
-  (Payment 1)
+  (Cost 1)
   (VP 0)
   [AntiXeno]
   [Settle]
@@ -39,7 +39,7 @@ antiXenoMilitia = Development
 constructionCorps :: Card
 constructionCorps = Development
   "CONSTRUCTION CORPS"
-  (Payment 4)
+  (Cost 4)
   (VP 2)
   []
   [Develop, Produce]
@@ -47,7 +47,7 @@ constructionCorps = Development
 galacticHomeFront :: Card
 galacticHomeFront = Development
   "GALACTIC HOME FRONT"
-  (Payment 5)
+  (Cost 5)
   (VP 3)
   []
   [Settle, Consume, Produce]
@@ -55,7 +55,7 @@ galacticHomeFront = Development
 imperiumArmsFactory :: Card
 imperiumArmsFactory = Development
   "IMPERIUM ARMS FACTORY"
-  (Payment 4)
+  (Cost 4)
   (VP 2)
   [Imperium]
   [Settle, Consume, Produce]
@@ -63,7 +63,7 @@ imperiumArmsFactory = Development
 upliftTerraforming :: Card
 upliftTerraforming = Development
   "UPLIFT TERRAFORMING"
-  (Payment 2)
+  (Cost 2)
   (VP 1)
   [Uplift, Terraforming]
   [Explore, Settle, Produce]
@@ -71,7 +71,7 @@ upliftTerraforming = Development
 adaptableUpliftRace :: Card
 adaptableUpliftRace = World
   "ADAPTABLE UPLIFT RACE"
-  (Payment 4)
+  (Cost 4)
   (WindFall Genes)
   (VP 2)
   [Uplift, Chromosome]
@@ -80,7 +80,7 @@ adaptableUpliftRace = World
 alienArchives :: Card
 alienArchives = World
   "ALIEN ARCHIVES"
-  (Payment 5)
+  (Cost 5)
   (Production AlienTechnology)
   (VP 4)
   [Alien]
@@ -116,7 +116,7 @@ alienWeaponCache = World
 antiXenoAlienBunker :: Card
 antiXenoAlienBunker = World
   "ANTI-XENO ALIEN BUNKER"
-  (Payment 3)
+  (Cost 3)
   (Production AlienTechnology)
   (VP 1)
   [AntiXeno, Alien]
@@ -134,7 +134,7 @@ antiXenoDefensePost = World
 antiXenoEmbassy :: Card
 antiXenoEmbassy = World
   "ANTI-XENO EMBASSY"
-  (Payment 2)
+  (Cost 2)
   (Production Novelty)
   (VP 1)
   [AntiXeno]
@@ -143,7 +143,7 @@ antiXenoEmbassy = World
 antiXenoRefugees :: Card
 antiXenoRefugees = World
   "ANTI-XENO REFUGEES"
-  (Payment 2)
+  (Cost 2)
   (WindFall Genes)
   (VP 0)
   [AntiXeno]
@@ -152,7 +152,7 @@ antiXenoRefugees = World
 corrosiveUpliftWorld :: Card
 corrosiveUpliftWorld = World
   "CORROSIVE UPLIFT WORLD"
-  (Payment 3)
+  (Cost 3)
   (Production Rare)
   QuestionMark
   [Uplift, Chromosome]
@@ -161,7 +161,7 @@ corrosiveUpliftWorld = World
 galacticClearingHouse :: Card
 galacticClearingHouse = World
   "GALACTIC CLEARING HOUSE"
-  (Payment 5)
+  (Cost 5)
   (WindFall Novelty)
   (VP 3)
   []
@@ -170,7 +170,7 @@ galacticClearingHouse = World
 imperiumMunitionsINC :: Card
 imperiumMunitionsINC = World
   "IMPERIUM MUNITIONS, INC."
-  (Payment 5)
+  (Cost 5)
   (Production Rare)
   (VP 4)
   [Imperium]
@@ -179,7 +179,7 @@ imperiumMunitionsINC = World
 noveltyPeddlers :: Card
 noveltyPeddlers = World
   "NOVELTY PEDDLERS"
-  (Payment 2)
+  (Cost 2)
   (WindFall Novelty)
   (VP 1)
   []
@@ -188,7 +188,7 @@ noveltyPeddlers = World
 panGalacticDiseaseCenter :: Card
 panGalacticDiseaseCenter = World
   "PAN-GALACTIC DISEASE CENTER"
-  (Payment 3)
+  (Cost 3)
   (Production Genes)
   (VP 1)
   []
@@ -233,7 +233,7 @@ rebelResistance = World
 starryRiftPioneers :: Card
 starryRiftPioneers = World
   "STARRY RIFT PIONEERS"
-  (Payment 2)
+  (Cost 2)
   (WindFall Novelty)
   (VP 0)
   []
@@ -242,7 +242,7 @@ starryRiftPioneers = World
 terraformingSurveyors :: Card
 terraformingSurveyors = World
   "TERRAFORMING SURVEYORS"
-  (Payment 2)
+  (Cost 2)
   Gray
   (VP 0)
   [Terraforming]
@@ -251,7 +251,7 @@ terraformingSurveyors = World
 terraformingUpliftProject :: Card
 terraformingUpliftProject = World
   "TERRAFORMING UPLIFT PROJECT"
-  (Payment 2)
+  (Cost 2)
   (WindFall Rare)
   (VP 0)
   [Terraforming, Uplift, Chromosome]
@@ -269,7 +269,7 @@ upliftCoalition = World
 upliftDescendants :: Card
 upliftDescendants = World
   "UPLIFT DESCENDANTS"
-  (Payment 1)
+  (Cost 1)
   (Production Novelty)
   (VP 0)
   [Uplift, Chromosome]
@@ -350,7 +350,7 @@ xenoOccupiedRebelWorld = World
 alienHistorians :: Card
 alienHistorians = Development
   "ALIEN HISTORIANS"
-  (Payment 6)
+  (Cost 6)
   QuestionMark
   [Alien]
   [Explore, Settle, Produce]
@@ -358,7 +358,7 @@ alienHistorians = Development
 antiXenoLeague :: Card
 antiXenoLeague = Development
   "ANTI-XENO LEAGUE"
-  (Payment 6)
+  (Cost 6)
   QuestionMark
   [AntiXeno]
   [Settle, Produce]
@@ -366,7 +366,7 @@ antiXenoLeague = Development
 antiXenoRebelForce :: Card
 antiXenoRebelForce = Development
   "ANTI-XENO REBEL FORCE"
-  (Payment 6)
+  (Cost 6)
   QuestionMark
   [AntiXeno, Rebel]
   [Settle]
@@ -374,7 +374,7 @@ antiXenoRebelForce = Development
 imperiumWarProfitters :: Card
 imperiumWarProfitters = Development
   "IMPERIUM WAR PROFITTERS"
-  (Payment 6)
+  (Cost 6)
   QuestionMark
   [Imperium]
   [Settle, Produce]
@@ -382,7 +382,7 @@ imperiumWarProfitters = Development
 terraformingDefenders :: Card
 terraformingDefenders = Development
   "TERRAFORMING DEFENDERS"
-  (Payment 6)
+  (Cost 6)
   QuestionMark
   [Terraforming]
   [Settle, Consume, Produce]
@@ -390,7 +390,7 @@ terraformingDefenders = Development
 upliftBioEngineers :: Card
 upliftBioEngineers = Development
   "UPLIFT BIO-ENGINEERS"
-  (Payment 6)
+  (Cost 6)
   QuestionMark
   [Uplift]
   [Consume, Produce]
