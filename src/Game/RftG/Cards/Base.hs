@@ -13,826 +13,952 @@ import Game.RftG.Card
 -------------------------------------------------------------------------------
 
 colonyShip :: Card
-colonyShip = Development
+colonyShip = Card
+  Development
   "COLONY SHIP"
   (Cost 2)
   (VP 1)
+  Nothing
   []
   [Settle]
 
 consumerMarkets :: Card
-consumerMarkets = Development
+consumerMarkets = Card
+  Development
   "CONSUMER MARKETS"
   (Cost 5)
   (VP 3)
+  Nothing
   []
   [Consume, Produce]
 
 contactSpecialist :: Card
-contactSpecialist = Development
+contactSpecialist = Card
+  Development
   "CONTACT SPECIALIST"
   (Cost 1)
   (VP 1)
+  Nothing
   []
   [Settle]
 
 deficitSpending :: Card
-deficitSpending = Development
+deficitSpending = Card
+  Development
   "DEFICIT SPENDING"
   (Cost 2)
   (VP 1)
+  Nothing
   []
   [Consume]
 
 diversifiedEconomy :: Card
-diversifiedEconomy = Development
+diversifiedEconomy = Card
+  Development
   "DIVERSIFIED ECONOMY"
   (Cost 4)
   (VP 2)
+  Nothing
   []
   [Consume, Produce]
 
 dropShips :: Card
-dropShips = Development
+dropShips = Card
+  Development
   "DROP SHIPS"
   (Cost 4)
   (VP 2)
+  Nothing
   []
   [Settle]
 
 expeditionForce :: Card
-expeditionForce = Development
+expeditionForce = Card
+  Development
   "EXPEDITION FORCE"
   (Cost 1)
   (VP 1)
+  Nothing
   []
   [Explore, Settle]
 
 exportDuties :: Card
-exportDuties = Development
+exportDuties = Card
+  Development
   "EXPORT DUTIES"
   (Cost 1)
   (VP 1)
+  Nothing
   []
   [Trade]
 
 geneticsLab :: Card
-geneticsLab = Development
+geneticsLab = Card
+  Development
   "GENETICS LAB"
   (Cost 2)
   (VP 1)
+  Nothing
   []
   [Trade, Produce]
 
 interstellarBank :: Card
-interstellarBank = Development
+interstellarBank = Card
+  Development
   "INTERSTELLAR BANK"
   (Cost 2)
   (VP 1)
+  Nothing
   []
   [Develop]
 
 investmentCredits :: Card
-investmentCredits = Development
+investmentCredits = Card
+  Development
   "INVESTMENT CREDITS"
   (Cost 1)
   (VP 1)
+  Nothing
   []
   [Develop]
 
 miningConglomerate :: Card
-miningConglomerate = Development
+miningConglomerate = Card
+  Development
   "MINING CONGLOMERATE"
   (Cost 3)
   (VP 2)
+  Nothing
   []
   [Trade, Consume, Produce]
 
 miningRobots :: Card
-miningRobots = Development
+miningRobots = Card
+  Development
   "MINING ROBOTS"
   (Cost 2)
   (VP 1)
+  Nothing
   []
   [Settle, Produce]
 
 newMilitaryTactics :: Card
-newMilitaryTactics = Development
+newMilitaryTactics = Card
+  Development
   "NEW MILITARY TACTICS"
   (Cost 1)
   (VP 1)
+  Nothing
   []
   [Settle]
 
 publicWorks :: Card
-publicWorks = Development
+publicWorks = Card
+  Development
   "PUBLIC WORKS"
   (Cost 1)
   (VP 1)
+  Nothing
   []
   [Develop, Consume]
 
 replicantRobots :: Card
-replicantRobots = Development
+replicantRobots = Card
+  Development
   "REPLICANT ROBOTS"
   (Cost 4)
   (VP 2)
+  Nothing
   []
   [Settle]
 
 researchLabs :: Card
-researchLabs = Development
+researchLabs = Card
+  Development
   "RESEARCH LABS"
   (Cost 4)
   (VP 2)
+  Nothing
   []
   [Explore, Consume, Produce]
 
 spaceMarines :: Card
-spaceMarines = Development
+spaceMarines = Card
+  Development
   "SPACE MARINES"
   (Cost 2)
   (VP 1)
+  Nothing
   []
   [Settle]
 
 terraformingRobots :: Card
-terraformingRobots = Development
+terraformingRobots = Card
+  Development
   "TERRAFORMING ROBOTS"
   (Cost 3)
   (VP 2)
+  Nothing
   [Terraforming]
   [Settle, Consume]
 
 alienRobotScoutShip :: Card
-alienRobotScoutShip = World
+alienRobotScoutShip = Card
+  (World $ WindFall AlienTechnology)
   "ALIEN ROBOT SCOUT SHIP"
   (Defense 4)
-  (WindFall AlienTechnology)
   (VP 2)
+  Nothing
   [Alien]
   [Settle]
 
 alienRobotSentry :: Card
-alienRobotSentry = World
+alienRobotSentry = Card
+  (World $ WindFall AlienTechnology)
   "ALIEN ROBOT SENTRY"
   (Defense 2)
-  (WindFall AlienTechnology)
   (VP 2)
+  Nothing
   [Alien]
   []
 
 alienRoboticFactory :: Card
-alienRoboticFactory = World
+alienRoboticFactory = Card
+  (World $ Production AlienTechnology)
   "ALIEN ROBOTIC FACTORY"
   (Cost 6)
-  (Production AlienTechnology)
   (VP 5)
+  Nothing
   [Alien]
   [Produce]
 
 alienRosettaStoneWorld :: Card
-alienRosettaStoneWorld = World
+alienRosettaStoneWorld = Card
+  (World Grey)
   "ALIEN ROSETTA STONE WORLD"
   (Defense 3)
-  Gray
   (VP 3)
+  Nothing
   [Alien]
   [Settle, Produce]
 
 alphaCentauri :: Card
-alphaCentauri = World
+alphaCentauri = Card
+  (World $ WindFall RareElements)
   "ALPHA CENTAURI"
   (Cost 2)
-  (WindFall Rare)
   (VP 0)
+  Nothing
   []
   [Settle]
 
 aquaticUpliftRace :: Card
-aquaticUpliftRace = World
+aquaticUpliftRace = Card
+  (World $ WindFall Genes)
   "AQUATIC UPLIFT RACE"
   (Defense 2)
-  (WindFall Genes)
   (VP 2)
+  Nothing
   [Uplift, Chromosome]
   []
 
 artistColony :: Card
-artistColony = World
+artistColony = Card
+  (World $ Production NoveltyGoods)
   "ARTIST COLONY"
   (Cost 1)
-  (Production Novelty)
   (VP 1)
+  Nothing
   []
   [Produce]
 
 asteroidBelt :: Card
-asteroidBelt = World
+asteroidBelt = Card
+  (World $ WindFall RareElements)
   "ASTEROID BELT"
   (Cost 2)
-  (WindFall Rare)
   (VP 1)
+  Nothing
   []
   []
 
 avianUpliftRace :: Card
-avianUpliftRace = World
+avianUpliftRace = Card
+  (World $ WindFall Genes)
   "AVIAN UPLIFT RACE"
   (Defense 2)
-  (WindFall Genes)
   (VP 2)
+  Nothing
   [Uplift, Chromosome]
   []
 
 bioHazardMiningWorld :: Card
-bioHazardMiningWorld = World
+bioHazardMiningWorld = Card
+  (World $ Production RareElements)
   "BIO-HAZARD MINING WORLD"
   (Cost 3)
-  (Production Rare)
   (VP 2)
+  Nothing
   []
   [Trade, Produce]
 
 blackMarketTradingWorld :: Card
-blackMarketTradingWorld = World
+blackMarketTradingWorld = Card
+  (World Grey)
   "BLACK MARKET TRADING WORLD"
   (Cost 3)
-  Gray
   (VP 2)
+  Nothing
   []
   [Consume]
 
 blasterGemMines :: Card
-blasterGemMines = World
+blasterGemMines = Card
+  (World $ WindFall RareElements)
   "BLASTER GEM MINES"
   (Cost 3)
-  (WindFall Rare)
   (VP 2)
+  Nothing
   []
   [Settle]
 
 cometZone :: Card
-cometZone = World
+cometZone = Card
+  (World $ Production RareElements)
   "COMET ZONE"
   (Cost 3)
-  (Production Rare)
   (VP 2)
+  Nothing
   []
   [Produce]
 
 desertedAlienColony :: Card
-desertedAlienColony = World
+desertedAlienColony = Card
+  (World $ WindFall AlienTechnology)
   "DESERTED ALIEN COLONY"
   (Cost 5)
-  (WindFall AlienTechnology)
   (VP 4)
+  Nothing
   [Alien]
   []
 
 desertedAlienLibrary :: Card
-desertedAlienLibrary = World
+desertedAlienLibrary = Card
+  (World $ WindFall AlienTechnology)
   "DESERTED ALIEN LIBRARY"
   (Cost 6)
-  (WindFall AlienTechnology)
   (VP 5)
+  Nothing
   [Alien]
   []
 
 desertedAlienOutpost :: Card
-desertedAlienOutpost = World
+desertedAlienOutpost = Card
+  (World $ WindFall AlienTechnology)
   "DESERTED ALIEN OUTPOST"
   (Cost 4)
-  (WindFall AlienTechnology)
   (VP 3)
+  Nothing
   [Alien]
   []
 
 destroyedWorld :: Card
-destroyedWorld = World
+destroyedWorld = Card
+  (World $ WindFall RareElements)
   "DESTROYED WORLD"
   (Cost 1)
-  (WindFall Rare)
   (VP 0)
+  Nothing
   []
   []
 
 distantWorld :: Card
-distantWorld = World
+distantWorld = Card
+  (World $ Production Genes)
   "DISTANT WORLD"
   (Cost 4)
-  (Production Genes)
   (VP 2)
+  Nothing
   []
   [Trade, Produce]
 
 earthsLostColony :: Card
-earthsLostColony = World
+earthsLostColony = Card
+  (World $ Production NoveltyGoods)
   "EARTH'S LOST COLONY"
   (Cost 2)
-  (Production Novelty)
   (VP 1)
+  Nothing
   []
   [Consume, Produce]
 
 empathWorld :: Card
-empathWorld = World
+empathWorld = Card
+  (World $ WindFall RareElements)
   "EMPATH WORLD"
   (Cost 1)
-  (WindFall Rare)
   (VP 1)
+  Nothing
   []
   [Settle]
 
 epsilonEridani :: Card
-epsilonEridani = World
+epsilonEridani = Card
+  (World Grey)
   "EPSILON ERIDANI"
   (Cost 2)
-  Gray
   (VP 1)
+  Nothing
   []
   [Settle, Consume]
 
 expandingColony :: Card
-expandingColony = World
+expandingColony = Card
+  (World Grey)
   "EXPANDING COLONY"
   (Cost 1)
-  Gray
   (VP 1)
+  Nothing
   []
   [Consume, Produce]
 
 formerPenalColony :: Card
-formerPenalColony = World
+formerPenalColony = Card
+  (World $ WindFall NoveltyGoods)
   "FORMER PENAL COLONY"
   (Defense 2)
-  (WindFall Novelty)
   (VP 1)
+  Nothing
   []
   [Settle]
 
 galacticEngineers :: Card
-galacticEngineers = World
+galacticEngineers = Card
+  (World Grey)
   "GALACTIC ENGINEERS"
   (Cost 2)
-  Gray
   (VP 1)
+  Nothing
   []
   [Trade, Produce]
 
 galacticResort :: Card
-galacticResort = World
+galacticResort = Card
+  (World $ WindFall NoveltyGoods)
   "GALACTIC RESORT"
   (Cost 3)
-  (WindFall Novelty)
   (VP 2)
+  Nothing
   []
   [Consume]
 
 galacticTrendsetters :: Card
-galacticTrendsetters = World
+galacticTrendsetters = Card
+  (World Grey)
   "GALACTIC TRENDSETTERS"
   (Cost 5)
-  Gray
   (VP 3)
+  Nothing
   []
   [Consume]
 
 gamblingWorld :: Card
-gamblingWorld = World
+gamblingWorld = Card
+  (World Grey)
   "GAMBLING WORLD"
   (Cost 1)
-  Gray
   (VP 1)
+  Nothing
   []
   [Consume]
 
 gemWorld :: Card
-gemWorld = World
+gemWorld = Card
+  (World $ Production NoveltyGoods)
   "GEM WORLD"
   (Cost 2)
-  (Production Novelty)
   (VP 1)
+  Nothing
   []
   [Produce]
 
 imperiumArmamentsWorld :: Card
-imperiumArmamentsWorld = World
+imperiumArmamentsWorld = Card
+  (World $ Production RareElements)
   "IMPERIUM ARMAMENTS WORLD"
   (Cost 4)
-  (Production Rare)
   (VP 2)
+  Nothing
   [Imperium]
   [Settle, Produce]
 
 lostAlienBattleFleet :: Card
-lostAlienBattleFleet = World
+lostAlienBattleFleet = Card
+  (World $ Production AlienTechnology)
   "LOST ALIEN BATTLE FLEET"
   (Defense 6)
-  (Production AlienTechnology)
   (VP 4)
+  Nothing
   [Alien]
   [Settle, Produce]
 
 lostAlienWarship :: Card
-lostAlienWarship = World
+lostAlienWarship = Card
+  (World $ WindFall AlienTechnology)
   "LOST ALIEN WARSHIP"
   (Defense 5)
-  (WindFall AlienTechnology)
   (VP 3)
+  Nothing
   [Alien]
   [Settle]
 
 lostSpeciesArkWorld :: Card
-lostSpeciesArkWorld = World
+lostSpeciesArkWorld = Card
+  (World $ Production Genes)
   "LOST SPECIES ARK WORLD"
   (Cost 5)
-  (Production Genes)
   (VP 3)
+  Nothing
   []
   [Produce]
 
 malevolentLifeforms :: Card
-malevolentLifeforms = World
+malevolentLifeforms = Card
+  (World $ Production Genes)
   "MALEVOLENT LIFEFORMS"
   (Defense 4)
-  (Production Genes)
   (VP 2)
+  Nothing
   []
   [Explore, Produce]
 
 merchantWorld :: Card
-merchantWorld = World
+merchantWorld = Card
+  (World Grey)
   "MERCHANT WORLD"
   (Cost 4)
-  Gray
   (VP 2)
+  Nothing
   []
   [Trade, Consume]
 
 miningWorld :: Card
-miningWorld = World
+miningWorld = Card
+  (World $ Production RareElements)
   "MINING WORLD"
   (Cost 3)
-  (Production Rare)
   (VP 2)
+  Nothing
   []
   [Produce]
 
 newEarth :: Card
-newEarth = World
+newEarth = Card
+  (World $ Production RareElements)
   "NEW EARTH"
   (Cost 5)
-  (Production Rare)
   (VP 3)
+  Nothing
   []
   [Consume, Produce]
 
 newSparta :: Card
-newSparta = World
+newSparta = Card
+  (World Grey)
   "NEW SPARTA"
   (Defense 2)
-  Gray
   (VP 1)
+  Nothing
   []
   [Settle]
 
 newSurvivalists :: Card
-newSurvivalists = World
+newSurvivalists = Card
+  (World $ Production NoveltyGoods)
   "NEW SURVIVALISTS"
   (Defense 1)
-  (Production Novelty)
   (VP 1)
+  Nothing
   []
   [Consume, Produce]
 
 newVinland :: Card
-newVinland = World
+newVinland = Card
+  (World $ Production NoveltyGoods)
   "NEW VINLAND"
   (Cost 2)
-  (Production Novelty)
   (VP 1)
+  Nothing
   []
   [Consume, Produce]
 
 oldEarth :: Card
-oldEarth = World
+oldEarth = Card
+  (World Grey)
   "OLD EARTH"
   (Cost 3)
-  Gray
   (VP 2)
+  Nothing
   []
   [Trade, Consume]
 
 outlawWorld :: Card
-outlawWorld = World
+outlawWorld = Card
+  (World Grey)
   "OUTLAW WORLD"
   (Defense 1)
-  Gray
   (VP 1)
+  Nothing
   []
   [Consume]
 
 pilgrimageWorld :: Card
-pilgrimageWorld = World
+pilgrimageWorld = Card
+  (World Grey)
   "PILGRIMAGE WORLD"
   (Cost 0)
-  Gray
   (VP 2)
+  Nothing
   []
   [Consume]
 
 pirateWorld :: Card
-pirateWorld = World
+pirateWorld = Card
+  (World $ WindFall NoveltyGoods)
   "PIRATE WORLD"
   (Defense 3)
-  (WindFall Novelty)
   (VP 2)
+  Nothing
   []
   [Trade]
 
 plagueWorld :: Card
-plagueWorld = World
+plagueWorld = Card
+  (World $ Production Genes)
   "PLAGUE WORLD"
   (Cost 3)
-  (Production Genes)
   (VP 0)
+  Nothing
   []
   [Consume, Produce]
 
 preSentientRace :: Card
-preSentientRace = World
+preSentientRace = Card
+  (World $ WindFall Genes)
   "PRE-SENTIENT RACE"
   (Cost 2)
-  (WindFall Genes)
   (VP 1)
+  Nothing
   []
   []
 
 prosperousWorld :: Card
-prosperousWorld = World
+prosperousWorld = Card
+  (World $ Production NoveltyGoods)
   "PROSPEROUS WORLD"
   (Cost 3)
-  (Production Novelty)
   (VP 2)
+  Nothing
   []
   [Consume, Produce]
 
 radioactiveWorld :: Card
-radioactiveWorld = World
+radioactiveWorld = Card
+  (World $ WindFall RareElements)
   "RADIOACTIVE WORLD"
   (Cost 2)
-  (WindFall Rare)
   (VP 1)
+  Nothing
   []
   []
 
 rebelBase :: Card
-rebelBase = World
+rebelBase = Card
+  (World Grey)
   "REBEL BASE"
   (Defense 6)
-  Gray
   (VP 6)
+  Nothing
   [Rebel]
   []
 
 rebelFuelCache :: Card
-rebelFuelCache = World
+rebelFuelCache = Card
+  (World Grey)
   "REBEL FUEL CACHE"
   (Defense 1)
-  Gray
   (VP 1)
+  Nothing
   [Rebel]
   []
 
 rebelHomeworld :: Card
-rebelHomeworld = World
+rebelHomeworld = Card
+  (World Grey)
   "REBEL HOMEWORLD"
   (Defense 7)
-  Gray
   (VP 7)
+  Nothing
   [Rebel]
   []
 
 rebelMiners :: Card
-rebelMiners = World
+rebelMiners = Card
+  (World $ Production RareElements)
   "REBEL MINERS"
   (Defense 2)
-  (Production Rare)
   (VP 1)
+  Nothing
   [Rebel]
   [Produce]
 
 rebelOutpost :: Card
-rebelOutpost = World
+rebelOutpost = Card
+  (World Grey)
   "REBEL OUTPOST"
   (Defense 5)
-  Gray
   (VP 5)
+  Nothing
   [Rebel]
   [Settle]
 
 rebelUnderground :: Card
-rebelUnderground = World
+rebelUnderground = Card
+  (World Grey)
   "REBEL UNDERGROUND"
   (Defense 3)
-  Gray
   (VP 4)
+  Nothing
   [Rebel]
   [Produce]
 
 rebelWarriorRace :: Card
-rebelWarriorRace = World
+rebelWarriorRace = Card
+  (World $ WindFall Genes)
   "REBEL WARRIOR RACE"
   (Defense 3)
-  (WindFall Genes)
   (VP 2)
+  Nothing
   [Rebel]
   [Settle]
 
 refugeeWorld :: Card
-refugeeWorld = World
+refugeeWorld = Card
+  (World $ WindFall NoveltyGoods)
   "REFUGEE WORLD"
   (Cost 0)
-  (WindFall Novelty)
   (VP 1)
+  Nothing
   []
   [Settle]
 
 reptilianUpliftRace :: Card
-reptilianUpliftRace = World
+reptilianUpliftRace = Card
+  (World $ WindFall Genes)
   "REPTILIAN UPLIFT RACE"
   (Defense 2)
-  (WindFall Genes)
   (VP 2)
+  Nothing
   [Uplift, Chromosome]
   []
 
 runawayRobots :: Card
-runawayRobots = World
+runawayRobots = Card
+  (World $ WindFall RareElements)
   "RUNAWAY ROBOTS"
   (Defense 1)
-  (WindFall Rare)
   (VP 1)
+  Nothing
   []
   [Produce]
 
 secludedWorld :: Card
-secludedWorld = World
+secludedWorld = Card
+  (World $ Production NoveltyGoods)
   "SECLUDED WORLD"
   (Cost 1)
-  (Production Novelty)
   (VP 1)
+  Nothing
   []
   [Consume, Produce]
 
 spacePort :: Card
-spacePort = World
+spacePort = Card
+  (World $ Production NoveltyGoods)
   "SPACE PORT"
   (Cost 2)
-  (Production Novelty)
   (VP 1)
+  Nothing
   []
   [Trade, Produce]
 
 spiceWorld :: Card
-spiceWorld = World
+spiceWorld = Card
+  (World $ Production NoveltyGoods)
   "SPICE WORLD"
   (Cost 2)
-  (Production Novelty)
   (VP 1)
+  Nothing
   []
   [Trade, Produce]
 
 starNomadLair :: Card
-starNomadLair = World
+starNomadLair = Card
+  (World $ WindFall NoveltyGoods)
   "STAR NOMAD LAIR"
   (Defense 1)
-  (WindFall Novelty)
   (VP 1)
+  Nothing
   []
   [Explore, Trade]
 
 terraformedWorld :: Card
-terraformedWorld = World
+terraformedWorld = Card
+  (World Grey)
   "TERRAFORMED WORLD"
   (Cost 5)
-  Gray
   (VP 5)
+  Nothing
   []
   [Consume]
 
 theLastOfTheUpliftGnarssh :: Card
-theLastOfTheUpliftGnarssh = World
+theLastOfTheUpliftGnarssh = Card
+  (World $ WindFall Genes)
   "THE LAST OF THE UPLIFT GNARSSH"
   (Defense 1)
-  (WindFall Genes)
   (VP 0)
+  Nothing
   [Uplift, Chromosome]
   []
 
 touristWorld :: Card
-touristWorld = World
+touristWorld = Card
+  (World Grey)
   "TOURIST WORLD"
   (Cost 4)
-  Gray
   (VP 2)
+  Nothing
   []
   [Consume]
 
 alienTechInstitute :: Card
-alienTechInstitute = Development
+alienTechInstitute = Card
+  Development
   "ALIEN TECH INSTITUTE"
   (Cost 6)
   QuestionMark
+  Nothing
   [Alien]
   [Settle]
 
 freeTradeAssociation :: Card
-freeTradeAssociation = Development
+freeTradeAssociation = Card
+  Development
   "FREE TRADE ASSOCIATION"
   (Cost 6)
   QuestionMark
+  Nothing
   []
   [Consume, Produce]
 
 galacticFederation :: Card
-galacticFederation = Development
+galacticFederation = Card
+  Development
   "GALACTIC FEDERATION"
   (Cost 6)
   QuestionMark
+  Nothing
   []
   [Develop]
 
 galacticImperium :: Card
-galacticImperium = Development
+galacticImperium = Card
+  Development
   "GALACTIC IMPERIUM"
   (Cost 6)
   QuestionMark
+  Nothing
   [Imperium]
   [Settle]
 
 galacticRenaissance :: Card
-galacticRenaissance = Development
+galacticRenaissance = Card
+  Development
   "GALACTIC RENAISSANCE"
   (Cost 6)
   QuestionMark
+  Nothing
   []
   [Explore]
 
 galacticSurveySETI :: Card
-galacticSurveySETI = Development
+galacticSurveySETI = Card
+  Development
   "GALACTIC SURVEY: SETI"
   (Cost 6)
   QuestionMark
+  Nothing
   []
   [Explore]
 
 merchantGuild :: Card
-merchantGuild = Development
+merchantGuild = Card
+  Development
   "MERCHANT GUILD"
   (Cost 6)
   QuestionMark
+  Nothing
   []
   [Produce]
 
 miningLeague :: Card
-miningLeague = Development
+miningLeague = Card
+  Development
   "MINING LEAGUE"
   (Cost 6)
   QuestionMark
+  Nothing
   []
   [Consume, Produce]
 
 newEconomy :: Card
-newEconomy = Development
+newEconomy = Card
+  Development
   "NEW ECONOMY"
   (Cost 6)
   QuestionMark
+  Nothing
   []
   [Consume]
 
 newGalacticOrder :: Card
-newGalacticOrder = Development
+newGalacticOrder = Card
+  Development
   "NEW GALACTIC ORDER"
   (Cost 6)
   QuestionMark
+  Nothing
   []
   [Settle]
 
 panGalacticLeague :: Card
-panGalacticLeague = Development
+panGalacticLeague = Card
+  Development
   "PAN-GALACTIC LEAGUE"
   (Cost 6)
   QuestionMark
+  Nothing
   []
   [Settle, Produce]
 
 tradeLeague :: Card
-tradeLeague = Development
+tradeLeague = Card
+  Development
   "TRADE LEAGUE"
   (Cost 6)
   QuestionMark
+  Nothing
   []
   [Trade, Consume]
 

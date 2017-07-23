@@ -13,340 +13,392 @@ import Game.RftG.Card
 -------------------------------------------------------------------------------
 
 alienResearchShip :: Card
-alienResearchShip = Development
+alienResearchShip = Card
+  Development
   "ALIEN RESEARCH SHIP"
   (Cost 4)
   (VP 2)
+  Nothing
   [Alien]
   [Explore, Settle, Produce]
 
 alienSurveyTechnology :: Card
-alienSurveyTechnology = Development
+alienSurveyTechnology = Card
+  Development
   "ALIEN SURVEY TECHNOLOGY"
   (Cost 1)
   (VP 1)
+  Nothing
   [Alien]
   [Explore, Settle]
 
 galacticInvestors :: Card
-galacticInvestors = Development
+galacticInvestors = Card
+  Development
   "GALACTIC INVESTORS"
   (Cost 5)
   (VP 3)
+  Nothing
   []
   [Develop, Produce]
 
 imperiumStealthTactics :: Card
-imperiumStealthTactics = Development
+imperiumStealthTactics = Card
+  Development
   "IMPERIUM STEALTH TACTICS"
   (Cost 2)
   (VP 1)
+  Nothing
   [Imperium]
   [Settle]
 
 imperiumSupplyConvoy :: Card
-imperiumSupplyConvoy = Development
+imperiumSupplyConvoy = Card
+  Development
   "IMPERIUM SUPPLY CONVOY"
   (Cost 3)
   (VP 2)
+  Nothing
   [Imperium]
   [Settle, Produce]
 
 scientificCruisers :: Card
-scientificCruisers = Development
+scientificCruisers = Card
+  Development
   "SCIENTIFIC CRUISERS"
   (Cost 2)
   (VP 1)
+  Nothing
   []
   [Explore, Settle, Consume]
 
 terraformingProject :: Card
-terraformingProject = Development
+terraformingProject = Card
+  Development
   "TERRAFORMING PROJECT"
   (Cost 3)
   (VP 0)
+  Nothing
   [Terraforming]
   [Settle, Produce]
 
 alienArtifactHunters :: Card
-alienArtifactHunters = World
+alienArtifactHunters = Card
+  (World Grey)
   "ALIEN ARTIFACT HUNTERS"
   (Cost 3)
-  Gray
   (VP 1)
+  Nothing
   [Alien]
   [Explore, Consume]
 
 alienFuelRefinery :: Card
-alienFuelRefinery = World
+alienFuelRefinery = Card
+  (World $ Production AlienTechnology)
   "ALIEN FUEL REFINERY"
   (Cost 2)
-  (Production AlienTechnology)
   (VP 2)
+  Nothing
   [Alien]
   [Develop, Trade, Produce]
 
 alienSentinels :: Card
-alienSentinels = World
+alienSentinels = Card
+  (World $ WindFall AlienTechnology)
   "ALIEN SENTINELS"
   (Defense 9)
-  (WindFall AlienTechnology)
   (VP 9)
+  Nothing
   [Alien]
   []
 
 alienUpliftChamber :: Card
-alienUpliftChamber = World
+alienUpliftChamber = Card
+  (World $ WindFall AlienTechnology)
   "ALIEN UPLIFT CHAMBER"
   (Cost 6)
-  (WindFall AlienTechnology)
   QuestionMark
+  Nothing
   [Alien, Uplift]
   [Settle, Produce]
 
 amphibianUpliftRace :: Card
-amphibianUpliftRace = World
+amphibianUpliftRace = Card
+  (World $ WindFall Genes)
   "AMPHIBIAN UPLIFT RACE"
   (Defense 2)
-  (WindFall Genes)
   (VP 2)
+  Nothing
   [Uplift, Chromosome]
   []
 
 arborealUpliftRace :: Card
-arborealUpliftRace = World
+arborealUpliftRace = Card
+  (World $ WindFall Genes)
   "ARBOREAL UPLIFT RACE"
   (Defense 2)
-  (WindFall Genes)
   (VP 2)
+  Nothing
   [Uplift, Chromosome]
   []
 
 deepSpaceSymbiontsLTD :: Card
-deepSpaceSymbiontsLTD = World
+deepSpaceSymbiontsLTD = Card
+  (World $ WindFall Genes)
   "DEEP SPACE SYMBIONTS, LTD."
   (Cost 3)
-  (WindFall Genes)
   (VP 1)
+  Nothing
   []
   [Develop]
 
 designerSpeciesULTD :: Card
-designerSpeciesULTD = World
+designerSpeciesULTD = Card
+  (World $ Production Genes)
   "DESIGNER SPECIES, ULTD."
   (Cost 5)
-  (Production Genes)
   (VP 3)
+  Nothing
   []
   [Consume, Produce]
 
 frontierCaptital :: Card
-frontierCaptital = World
+frontierCaptital = Card
+  (World Grey)
   "FRONTIER CAPTITAL"
   (Defense 1)
-  Gray
   (VP 1)
+  Nothing
   []
   [Develop, Settle]
 
 galacticNewsHub :: Card
-galacticNewsHub = World
+galacticNewsHub = Card
+  (World $ WindFall NoveltyGoods)
   "GALACTIC NEWS HUB"
   (Cost 4)
-  (WindFall Novelty)
   (VP 2)
+  Nothing
   []
   [Consume, Produce]
 
 galacticSurveyHeadquarters :: Card
-galacticSurveyHeadquarters = World
+galacticSurveyHeadquarters = Card
+  (World $ Production NoveltyGoods)
   "GALACTIC SURVEY HEADQUARTERS"
   (Cost 2)
-  (Production Novelty)
   (VP 1)
+  Nothing
   []
   [Explore, Trade, Produce]
 
 imperiumBlasterGemDepot :: Card
-imperiumBlasterGemDepot = World
+imperiumBlasterGemDepot = Card
+  (World $ WindFall RareElements)
   "IMPERIUM BLASTER GEM DEPOT"
   (Defense 5)
-  (WindFall Rare)
   (VP 3)
+  Nothing
   [Imperium]
   [Settle, Trade]
 
 imperiumFifthColumn :: Card
-imperiumFifthColumn = World
+imperiumFifthColumn = Card
+  (World Grey)
   "IMPERIUM FIFTH COLUMN"
   (Defense 1)
-  Gray
   (VP 0)
+  Nothing
   [Imperium]
   [Settle, Produce]
 
 interstellarTradePort :: Card
-interstellarTradePort = World
+interstellarTradePort = Card
+  (World $ Production NoveltyGoods)
   "INTERSTELLAR TRADE PORT"
   (Cost 5)
-  (Production Novelty)
   (VP 3)
+  Nothing
   []
   [Consume, Produce]
 
 jumpdriveFuelRefinery :: Card
-jumpdriveFuelRefinery = World
+jumpdriveFuelRefinery = Card
+  (World $ Production RareElements)
   "JUMPDRIVE FUEL REFINERY"
   (Cost 3)
-  (Production Rare)
   (VP 2)
+  Nothing
   []
   [Settle, Produce]
 
 mercenaryGuild :: Card
-mercenaryGuild = World
+mercenaryGuild = Card
+  (World $ WindFall NoveltyGoods)
   "MERCENARY GUILD"
   (Defense 3)
-  (WindFall Novelty)
   (VP 2)
+  Nothing
   []
   [Settle]
 
 oreRichWorld :: Card
-oreRichWorld = World
+oreRichWorld = Card
+  (World $ Production RareElements)
   "ORE-RICH WORLD"
   (Cost 2)
-  (Production Rare)
   (VP 1)
+  Nothing
   []
   [Produce]
 
 rebelGemSmugglers :: Card
-rebelGemSmugglers = World
+rebelGemSmugglers = Card
+  (World $ WindFall RareElements)
   "rebelGemSmugglers"
   (Defense 2)
-  (WindFall Rare)
   (VP 0)
+  Nothing
   [Rebel]
   [Settle, Produce]
 
 rebelMutineers :: Card
-rebelMutineers = World
+rebelMutineers = Card
+  (World $ WindFall NoveltyGoods)
   "REBEL MUTINEERS"
   (Defense 2)
-  (WindFall Novelty)
   (VP 0)
+  Nothing
   [Rebel]
   [Explore, Settle]
 
 rebelResistance :: Card
-rebelResistance = World
+rebelResistance = Card
+  (World Grey)
   "REBEL RESISTANCE"
   (Defense 8)
-  Gray
   QuestionMark
+  Nothing
   [Rebel]
   [Produce]
 
 rebelUpliftWorld :: Card
-rebelUpliftWorld = World
+rebelUpliftWorld = Card
+  (World Grey)
   "REBEL UPLIFT WORLD"
   (Defense 1)
-  Gray
   (VP 1)
+  Nothing
   [Rebel, Uplift]
   [Settle]
 
 selfRepairingAlienArtillery :: Card
-selfRepairingAlienArtillery = World
+selfRepairingAlienArtillery = Card
+  (World $ Production AlienTechnology)
   "SELF-REPAIRING ALIEN ARTILLERY"
   (Defense 4)
-  (Production AlienTechnology)
   (VP 1)
+  Nothing
   [Alien]
   [Settle, Produce]
 
 sentientRobots :: Card
-sentientRobots = World
+sentientRobots = Card
+  (World Grey)
   "SENTIENT ROBOTS"
   (Defense 1)
-  Gray
   (VP 1)
+  Nothing
   []
   [Settle, Produce]
 
 terraformingColony :: Card
-terraformingColony = World
+terraformingColony = Card
+  (World $ WindFall NoveltyGoods)
   "TERRAFORMING COLONY"
   (Cost 5)
-  (WindFall Novelty)
   (VP 2)
+  Nothing
   [Terraforming]
   [Consume]
 
 transhipPoint :: Card
-transhipPoint = World
+transhipPoint = Card
+  (World Grey)
   "TRANSHIP POINT"
   (Cost 0)
-  Gray
   (VP 2)
+  Nothing
   []
   [Settle, Produce]
 
 upliftResearchers :: Card
-upliftResearchers = World
+upliftResearchers = Card
+  (World Grey)
   "UPLIFT RESEARCHERS"
   (Cost 2)
-  Gray
   (VP 1)
+  Nothing
   [Uplift]
   [Explore, Settle]
 
 alienResearchers :: Card
-alienResearchers = Development
+alienResearchers = Card
+  Development
   "ALIEN RESEARCHERS"
   (Cost 6)
   QuestionMark
+  Nothing
   [Alien]
   [Settle, Consume]
 
 galacticExpansionists :: Card
-galacticExpansionists = Development
+galacticExpansionists = Card
+  Development
   "GALACTIC EXPANSIONISTS"
   (Cost 6)
   QuestionMark
+  Nothing
   []
   [Develop, Settle, Consume]
 
 imperiumWarFaction :: Card
-imperiumWarFaction = Development
+imperiumWarFaction = Card
+  Development
   "IMPERIUM WAR FACTION"
   (Cost 6)
   QuestionMark
+  Nothing
   [Imperium]
   [Settle, Produce]
 
 terraformingUnlimited :: Card
-terraformingUnlimited = Development
+terraformingUnlimited = Card
+  Development
   "TERRAFORMING UNLIMITED"
   (Cost 3)
   QuestionMark
+  Nothing
   [Terraforming]
   [Explore, Settle, Consume]
 
 upliftAlliance :: Card
-upliftAlliance = Development
+upliftAlliance = Card
+  Development
   "UPLIFT ALLIANCE"
   (Cost 6)
   QuestionMark
+  Nothing
   [Uplift]
   [Settle, Produce]
 
 wormholeProspectors :: Card
-wormholeProspectors = Development
+wormholeProspectors = Card
+  Development
   "WORMHOLE PROSPECTORS"
   (Cost 6)
   QuestionMark
+  Nothing
   []
   [Settle, Trade, Consume]
 

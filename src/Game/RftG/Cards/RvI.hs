@@ -13,312 +13,362 @@ import Game.RftG.Card
 -------------------------------------------------------------------------------
 
 galacticAdvertisers :: Card
-galacticAdvertisers = Development
+galacticAdvertisers = Card
+  Development
   "GALACTIC ADVERTISERS"
   (Cost 3)
   (VP 2)
+  Nothing
   []
   [Trade, Consume]
 
 galacticSalon :: Card
-galacticSalon = Development
+galacticSalon = Card
+  Development
   "GALACTIC SALON"
   (Cost 4)
   (VP 2)
+  Nothing
   []
   [Consume]
 
 imperiumCloakingTechnology :: Card
-imperiumCloakingTechnology = Development
+imperiumCloakingTechnology = Card
+  Development
   "IMPERIUM CLOAKING TECHNOLOGY"
   (Cost 1)
   (VP 1)
+  Nothing
   [Imperium]
   [Settle]
 
 imperiumTroops :: Card
-imperiumTroops = Development
+imperiumTroops = Card
+  Development
   "IMPERIUM TROOPS"
   (Cost 1)
   (VP 1)
+  Nothing
   [Imperium]
   [Settle]
 
 mercenaryFleet :: Card
-mercenaryFleet = Development
+mercenaryFleet = Card
+  Development
   "MERCENARY FLEET"
   (Cost 3)
   (VP 1)
+  Nothing
   []
   [Settle]
 
 panGalacticResearch :: Card
-panGalacticResearch = Development
+panGalacticResearch = Card
+  Development
   "PAN-GALACTIC RESEARCH"
   (Cost 6)
   (VP 4)
+  Nothing
   []
   [Explore, Develop, Consume]
 
 rndCrashProgram :: Card
-rndCrashProgram = Development
+rndCrashProgram = Card
+  Development
   "R&D CRASH PROGRAM"
   (Cost 1)
   (VP 0)
+  Nothing
   []
   [Develop, Consume]
 
 rebelPact :: Card
-rebelPact = Development
+rebelPact = Card
+  Development
   "REBEL PACT"
   (Cost 1)
   (VP 1)
+  Nothing
   [Rebel]
   [Explore, Settle]
 
 abandonedAlienUpliftCamp :: Card
-abandonedAlienUpliftCamp = World
+abandonedAlienUpliftCamp = Card
+  (World Grey)
   "ABANDONED ALIEN UPLIFT CAMP"
   (Cost 1)
-  Gray
   (VP 2)
+  Nothing
   [Alien, Uplift]
   [Explore, Settle]
 
 alienDataRepository :: Card
-alienDataRepository = World
+alienDataRepository = Card
+  (World $ Production AlienTechnology)
   "ALIEN DATA REPOSITORY"
   (Cost 7)
-  (Production AlienTechnology)
   (VP 6)
+  Nothing
   [Alien]
   [Explore, Produce]
 
 alienMonolith :: Card
-alienMonolith = World
+alienMonolith = Card
+  (World $ WindFall AlienTechnology)
   "ALIEN MONOLITH"
   (Defense 8)
-  (WindFall AlienTechnology)
   (VP 8)
+  (Just Prestige)
   [Alien]
   []
 
 alienUpliftCenter :: Card
-alienUpliftCenter = World
+alienUpliftCenter = Card
+  (World $ WindFall AlienTechnology)
   "ALIEN UPLIFT CENTER"
   (Defense 5)
-  (WindFall AlienTechnology)
   (VP 4)
+  Nothing
   [Alien, Uplift]
   [Explore, Settle]
 
 blasterRunners :: Card
-blasterRunners = World
+blasterRunners = Card
+  (World Grey)
   "BLASTER RUNNERS"
   (Defense 1)
-  Gray
   (VP 1)
+  Nothing
   []
   [Explore, Settle]
 
 devolvedUpliftRace :: Card
-devolvedUpliftRace = World
+devolvedUpliftRace = Card
+  (World $ Production NoveltyGoods)
   "DEVOLVED UPLIFT RACE"
   (Defense 3)
-  (Production Novelty)
   (VP 1)
+  Nothing
   [Uplift, Chromosome]
   [Produce]
 
 dyingColony :: Card
-dyingColony = World
+dyingColony = Card
+  (World $ WindFall NoveltyGoods)
   "DYING COLONY"
   (Cost 0)
-  (WindFall Novelty)
   (VP 0)
+  Nothing
   []
   [Consume]
 
 galacticDevelopers :: Card
-galacticDevelopers = World
+galacticDevelopers = Card
+  (World Grey)
   "GALACTIC DEVELOPERS"
   (Cost 2)
-  Gray
   (VP 1)
+  Nothing
   []
   [Develop, Consume]
 
 gemSmugglers :: Card
-gemSmugglers = World
+gemSmugglers = Card
+  (World $ WindFall RareElements)
   "GEM SMUGGLERS"
   (Cost 3)
-  (WindFall Rare)
   (VP 1)
+  Nothing
   []
   [Explore, Settle]
 
 geneDesigners :: Card
-geneDesigners = World
+geneDesigners = Card
+  (World $ Production Genes)
   "GENE DESIGNERS"
   (Cost 6)
-  (Production Genes)
   (VP 3)
+  Nothing
   []
   [Consume, Produce]
 
 hiddenFortress :: Card
-hiddenFortress = World
+hiddenFortress = Card
+  (World Grey)
   "HIDDEN FORTRESS"
   (Defense 5)
-  Gray
   (VP 3)
+  Nothing
   []
   [Settle]
 
 imperiumBlasterGemConsortium :: Card
-imperiumBlasterGemConsortium = World
+imperiumBlasterGemConsortium = Card
+  (World $ Production RareElements)
   "IMPERIUM BLASTER GEM CONSORTIUM"
   (Cost 6)
-  (Production Rare)
   (VP 4)
+  (Just Prestige)
   [Imperium]
   [Settle, Consume, Produce]
 
 imperiumWarlord :: Card
-imperiumWarlord = World
+imperiumWarlord = Card
+  (World Grey)
   "IMPERIUM WARLORD"
   (Cost 2)
-  Gray
   (VP 2)
+  Nothing
   [Imperium]
   [Explore, Settle]
 
 insectUpliftRace :: Card
-insectUpliftRace = World
+insectUpliftRace = Card
+  (World $ WindFall Genes)
   "INSECT UPLIFT RACE"
   (Defense 3)
-  (WindFall Genes)
   (VP 2)
+  Nothing
   [Uplift, Chromosome]
   []
 
 interstellarProspectors :: Card
-interstellarProspectors = World
+interstellarProspectors = Card
+  (World $ Production RareElements)
   "INTERSTELLAR PROSPECTORS"
   (Cost 3)
-  (Production Rare)
   (VP 2)
+  Nothing
   []
   [Explore, Produce]
 
 primitiveRebelWorld :: Card
-primitiveRebelWorld = World
+primitiveRebelWorld = Card
+  (World $ WindFall NoveltyGoods)
   "PRIMITIVE REBEL WORLD"
   (Defense 1)
-  (WindFall Novelty)
   (VP 1)
+  Nothing
   [Rebel]
   [Settle]
 
 rebelCantina :: Card
-rebelCantina = World
+rebelCantina = Card
+  (World Grey)
   "REBEL CANTINA"
   (Cost 2)
-  Gray
   (VP 0)
+  Nothing
   [Rebel]
   [Settle, Produce]
 
 rebelConvictMines :: Card
-rebelConvictMines = World
+rebelConvictMines = Card
+  (World $ WindFall RareElements)
   "REBEL CONVICT MINES"
   (Defense 2)
-  (WindFall Rare)
   (VP 1)
+  Nothing
   [Rebel]
   [Settle]
 
 rebelStronghold :: Card
-rebelStronghold = World
+rebelStronghold = Card
+  (World Grey)
   "REBEL STRONGHOLD"
   (Defense 9)
-  Gray
   (VP 9)
+  Nothing
   [Rebel]
   []
 
 smugglingWorld :: Card
-smugglingWorld = World
+smugglingWorld = Card
+  (World $ Production NoveltyGoods)
   "SMUGGLING WORLD"
   (Cost 1)
-  (Production Novelty)
   (VP 0)
+  Nothing
   []
   [Explore, Settle, Produce]
 
 tradingOutpost :: Card
-tradingOutpost = World
+tradingOutpost = Card
+  (World Grey)
   "TRADING OUTPOST"
   (Cost 1)
-  Gray
   (VP 1)
+  Nothing
   []
   [Explore, Trade]
 
 universalSymbionts :: Card
-universalSymbionts = World
+universalSymbionts = Card
+  (World $ WindFall Genes)
   "UNIVERSAL SYMBIONTS"
   (Cost 3)
-  (WindFall Genes)
   (VP 1)
+  Nothing
   []
   [Consume, Produce]
 
 galacticBankers :: Card
-galacticBankers = Development
+galacticBankers = Card
+  Development
   "GALACTIC BANKERS"
   (Cost 6)
   QuestionMark
+  (Just Prestige)
   []
   [Develop, Consume]
 
 galacticExchange :: Card
-galacticExchange = Development
+galacticExchange = Card
+  Development
   "GALACTIC EXCHANGE"
   (Cost 6)
   QuestionMark
+  Nothing
   []
   [Consume]
 
 imperiumSeat :: Card
-imperiumSeat = Development
+imperiumSeat = Card
+  Development
   "IMPERIUM SEAT"
   (Cost 6)
   QuestionMark
+  Nothing
   [Imperium]
   [Settle]
 
 prospectingGuild :: Card
-prospectingGuild = Development
+prospectingGuild = Card
+  Development
   "PROSPECTING GUILD"
   (Cost 6)
   QuestionMark
+  Nothing
   []
   [Explore, Trade, Consume]
 
 rebelAlliance :: Card
-rebelAlliance = Development
+rebelAlliance = Card
+  Development
   "REBEL ALLIANCE"
   (Cost 6)
   QuestionMark
+  Nothing
   [Rebel]
   [Settle]
 
 upliftCode :: Card
-upliftCode = Development
+upliftCode = Card
+  Development
   "UPLIFT CODE"
   (Cost 6)
   QuestionMark
+  (Just Prestige)
   [Uplift]
   [Produce]
 

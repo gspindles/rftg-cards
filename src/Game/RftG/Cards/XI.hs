@@ -13,385 +13,442 @@ import Game.RftG.Card
 -------------------------------------------------------------------------------
 
 alienWeaponPlans :: Card
-alienWeaponPlans = Development
+alienWeaponPlans = Card
+  Development
   "ALIEN WEAPON PLANS"
   (Cost 1)
   (VP 1)
+  Nothing
   [Alien]
   [Explore, Settle]
 
 antiXenoAssaultTroops :: Card
-antiXenoAssaultTroops = Development
+antiXenoAssaultTroops = Card
+  Development
   "ANTI-XENO ASSAULT TROOPS"
   (Cost 3)
   (VP 2)
+  Nothing
   [AntiXeno]
   [Settle]
 
 antiXenoMilitia :: Card
-antiXenoMilitia = Development
+antiXenoMilitia = Card
+  Development
   "ANTI-XENO MILITIA"
   (Cost 1)
   (VP 0)
+  Nothing
   [AntiXeno]
   [Settle]
 
 constructionCorps :: Card
-constructionCorps = Development
+constructionCorps = Card
+  Development
   "CONSTRUCTION CORPS"
   (Cost 4)
   (VP 2)
+  Nothing
   []
   [Develop, Produce]
 
 galacticHomeFront :: Card
-galacticHomeFront = Development
+galacticHomeFront = Card
+  Development
   "GALACTIC HOME FRONT"
   (Cost 5)
   (VP 3)
+  Nothing
   []
   [Settle, Consume, Produce]
 
 imperiumArmsFactory :: Card
-imperiumArmsFactory = Development
+imperiumArmsFactory = Card
+  Development
   "IMPERIUM ARMS FACTORY"
   (Cost 4)
   (VP 2)
+  Nothing
   [Imperium]
   [Settle, Consume, Produce]
 
 upliftTerraforming :: Card
-upliftTerraforming = Development
+upliftTerraforming = Card
+  Development
   "UPLIFT TERRAFORMING"
   (Cost 2)
   (VP 1)
+  Nothing
   [Uplift, Terraforming]
   [Explore, Settle, Produce]
 
 adaptableUpliftRace :: Card
-adaptableUpliftRace = World
+adaptableUpliftRace = Card
+  (World $ WindFall Genes)
   "ADAPTABLE UPLIFT RACE"
   (Cost 4)
-  (WindFall Genes)
   (VP 2)
+  Nothing
   [Uplift, Chromosome]
   [Consume]
 
 alienArchives :: Card
-alienArchives = World
+alienArchives = Card
+  (World $ Production AlienTechnology)
   "ALIEN ARCHIVES"
   (Cost 5)
-  (Production AlienTechnology)
   (VP 4)
+  Nothing
   [Alien]
   [Settle, Produce]
 
 alienDefenseCenter :: Card
-alienDefenseCenter = World
+alienDefenseCenter = Card
+  (World $ WindFall AlienTechnology)
   "ALIEN DEFENSE CENTER"
   (Defense 8)
-  (WindFall AlienTechnology)
   (VP 8)
+  Nothing
   [Alien]
   [Settle]
 
 alienFirstContactTeam :: Card
-alienFirstContactTeam = World
+alienFirstContactTeam = Card
+  (World Grey)
   "ALIEN FIRST CONTACT TEAM"
   (Defense 1)
-  Gray
   (VP 1)
+  Nothing
   [Alien]
   [Explore, Settle]
 
 alienWeaponCache :: Card
-alienWeaponCache = World
+alienWeaponCache = Card
+  (World $ WindFall AlienTechnology)
   "ALIEN WEAPON CACHE"
   (Defense 3)
-  (WindFall AlienTechnology)
   (VP 1)
+  Nothing
   [Alien]
   [Settle]
 
 antiXenoAlienBunker :: Card
-antiXenoAlienBunker = World
+antiXenoAlienBunker = Card
+  (World $ Production AlienTechnology)
   "ANTI-XENO ALIEN BUNKER"
   (Cost 3)
-  (Production AlienTechnology)
   (VP 1)
+  Nothing
   [AntiXeno, Alien]
   [Settle, Produce]
 
 antiXenoDefensePost :: Card
-antiXenoDefensePost = World
+antiXenoDefensePost = Card
+  (World Grey)
   "ANTI-XENO DEFENSE POST"
   (Defense 2)
-  Gray
   (VP 2)
+  Nothing
   [AntiXeno]
   [Settle, Produce]
 
 antiXenoEmbassy :: Card
-antiXenoEmbassy = World
+antiXenoEmbassy = Card
+  (World $ Production NoveltyGoods)
   "ANTI-XENO EMBASSY"
   (Cost 2)
-  (Production Novelty)
   (VP 1)
+  Nothing
   [AntiXeno]
   [Settle, Consume, Produce]
 
 antiXenoRefugees :: Card
-antiXenoRefugees = World
+antiXenoRefugees = Card
+  (World $ WindFall Genes)
   "ANTI-XENO REFUGEES"
   (Cost 2)
-  (WindFall Genes)
   (VP 0)
+  Nothing
   [AntiXeno]
   [Settle]
 
 corrosiveUpliftWorld :: Card
-corrosiveUpliftWorld = World
+corrosiveUpliftWorld = Card
+  (World $ Production RareElements)
   "CORROSIVE UPLIFT WORLD"
   (Cost 3)
-  (Production Rare)
   QuestionMark
+  Nothing
   [Uplift, Chromosome]
   [Consume, Produce]
 
 galacticClearingHouse :: Card
-galacticClearingHouse = World
+galacticClearingHouse = Card
+  (World $ WindFall NoveltyGoods)
   "GALACTIC CLEARING HOUSE"
   (Cost 5)
-  (WindFall Novelty)
   (VP 3)
+  Nothing
   []
   [Trade, Consume, Produce]
 
 imperiumMunitionsINC :: Card
-imperiumMunitionsINC = World
+imperiumMunitionsINC = Card
+  (World $ Production RareElements)
   "IMPERIUM MUNITIONS, INC."
   (Cost 5)
-  (Production Rare)
   (VP 4)
+  Nothing
   [Imperium]
   [Settle, Produce]
 
 noveltyPeddlers :: Card
-noveltyPeddlers = World
+noveltyPeddlers = Card
+  (World $ WindFall NoveltyGoods)
   "NOVELTY PEDDLERS"
   (Cost 2)
-  (WindFall Novelty)
   (VP 1)
+  Nothing
   []
   [Settle, Trade, Consume]
 
 panGalacticDiseaseCenter :: Card
-panGalacticDiseaseCenter = World
+panGalacticDiseaseCenter = Card
+  (World $ Production Genes)
   "PAN-GALACTIC DISEASE CENTER"
   (Cost 3)
-  (Production Genes)
   (VP 1)
+  Nothing
   []
   [Settle, Produce]
 
 rebelBlackMarketGangs :: Card
-rebelBlackMarketGangs = World
+rebelBlackMarketGangs = Card
+  (World $ WindFall NoveltyGoods)
   "REBEL BLACK MARKET GANGS"
   (Defense 1)
-  (WindFall Novelty)
   (VP 0)
+  Nothing
   [Rebel]
   [Settle, Trade]
 
 rebelBunker :: Card
-rebelBunker = World
+rebelBunker = Card
+  (World $ WindFall RareElements)
   "REBEL BUNKER"
   (Defense 1)
-  (WindFall Rare)
   (VP 0)
+  Nothing
   [Rebel]
   [Explore, Settle]
 
 rebelCadre :: Card
-rebelCadre = World
+rebelCadre = Card
+  (World Grey)
   "REBEL CADRE"
   (Defense 1)
-  Gray
   (VP 0)
+  Nothing
   [Rebel]
   [Settle, Consume]
 
 rebelResistance :: Card
-rebelResistance = World
+rebelResistance = Card
+  (World $ Production RareElements)
   "REBEL RESISTANCE"
   (Defense 3)
-  (Production Rare)
   (VP 1)
+  Nothing
   [Rebel]
   [Explore, Settle, Produce]
 
 starryRiftPioneers :: Card
-starryRiftPioneers = World
+starryRiftPioneers = Card
+  (World $ WindFall NoveltyGoods)
   "STARRY RIFT PIONEERS"
   (Cost 2)
-  (WindFall Novelty)
   (VP 0)
+  Nothing
   []
   [Settle, Produce]
 
 terraformingSurveyors :: Card
-terraformingSurveyors = World
+terraformingSurveyors = Card
+  (World Grey)
   "TERRAFORMING SURVEYORS"
   (Cost 2)
-  Gray
   (VP 0)
+  Nothing
   [Terraforming]
   [Explore, Trade]
 
 terraformingUpliftProject :: Card
-terraformingUpliftProject = World
+terraformingUpliftProject = Card
+  (World $ WindFall RareElements)
   "TERRAFORMING UPLIFT PROJECT"
   (Cost 2)
-  (WindFall Rare)
   (VP 0)
+  Nothing
   [Terraforming, Uplift, Chromosome]
   [Consume]
 
 upliftCoalition :: Card
-upliftCoalition = World
+upliftCoalition = Card
+  (World $ WindFall Genes)
   "UPLIFT COALITION"
   (Defense 4)
-  (WindFall Genes)
   QuestionMark
+  Nothing
   [Uplift, Chromosome]
   [Explore, Settle]
 
 upliftDescendants :: Card
-upliftDescendants = World
+upliftDescendants = Card
+  (World $ Production NoveltyGoods)
   "UPLIFT DESCENDANTS"
   (Cost 1)
-  (Production Novelty)
   (VP 0)
+  Nothing
   [Uplift, Chromosome]
   [Consume, Produce]
 
 xenoColony :: Card
-xenoColony = World
+xenoColony = Card
+  (World $ Production Genes)
   "XENO COLONY"
   (Defense 4)
-  (Production Genes)
   (VP 2)
+  Nothing
   [Xeno]
   [Produce]
 
 xenoForwardCommand :: Card
-xenoForwardCommand = World
+xenoForwardCommand = Card
+  (World Grey)
   "XENO FORWARD COMMAND"
   (Defense 9)
-  Gray
   (VP 9)
+  Nothing
   [Xeno]
   []
 
 xenoHostagePlanet :: Card
-xenoHostagePlanet = World
+xenoHostagePlanet = Card
+  (World $ WindFall NoveltyGoods)
   "XENO HOSTAGE PLANET"
   (Defense 5)
-  (WindFall Novelty)
   (VP 4)
+  Nothing
   [Xeno]
   []
 
 xenoWarriorColony :: Card
-xenoWarriorColony = World
+xenoWarriorColony = Card
+  (World Grey)
   "XENO WARRIOR COLONY"
   (Defense 6)
-  Gray
   (VP 5)
+  Nothing
   [Xeno]
   [Settle]
 
 xenoHeldImperiumMine :: Card
-xenoHeldImperiumMine = World
+xenoHeldImperiumMine = Card
+  (World $ Production RareElements)
   "XENO-HELD IMPERIUM MINE"
   (Defense 2)
-  (Production Rare)
   (VP 0)
+  Nothing
   [Xeno, Imperium]
   [Settle, Produce]
 
 xenoInfestedAlienOutpost :: Card
-xenoInfestedAlienOutpost = World
+xenoInfestedAlienOutpost = Card
+  (World $ WindFall AlienTechnology)
   "XENO-INFESTED ALIEN OUTPOST"
   (Defense 7)
-  (WindFall AlienTechnology)
   (VP 5)
+  Nothing
   [Xeno, Alien]
   [Settle]
 
 xenoInfestedUpliftWorld :: Card
-xenoInfestedUpliftWorld = World
+xenoInfestedUpliftWorld = Card
+  (World $ WindFall Genes)
   "XENO-INFESTED UPLIFT WORLD"
   (Defense 2)
-  (WindFall Genes)
   (VP 1)
+  Nothing
   [Xeno, Uplift, Chromosome]
   []
 
 xenoOccupiedRebelWorld :: Card
-xenoOccupiedRebelWorld = World
+xenoOccupiedRebelWorld = Card
+  (World Grey)
   "XENO-OCCUPIED REBEL WORLD"
   (Defense 8)
-  Gray
   (VP 7)
+  Nothing
   [Xeno, Rebel]
   [Settle]
 
 alienHistorians :: Card
-alienHistorians = Development
+alienHistorians = Card
+  Development
   "ALIEN HISTORIANS"
   (Cost 6)
   QuestionMark
+  Nothing
   [Alien]
   [Explore, Settle, Produce]
 
 antiXenoLeague :: Card
-antiXenoLeague = Development
+antiXenoLeague = Card
+  Development
   "ANTI-XENO LEAGUE"
   (Cost 6)
   QuestionMark
+  Nothing
   [AntiXeno]
   [Settle, Produce]
 
 antiXenoRebelForce :: Card
-antiXenoRebelForce = Development
+antiXenoRebelForce = Card
+  Development
   "ANTI-XENO REBEL FORCE"
   (Cost 6)
   QuestionMark
+  Nothing
   [AntiXeno, Rebel]
   [Settle]
 
 imperiumWarProfitters :: Card
-imperiumWarProfitters = Development
+imperiumWarProfitters = Card
+  Development
   "IMPERIUM WAR PROFITTERS"
   (Cost 6)
   QuestionMark
+  Nothing
   [Imperium]
   [Settle, Produce]
 
 terraformingDefenders :: Card
-terraformingDefenders = Development
+terraformingDefenders = Card
+  Development
   "TERRAFORMING DEFENDERS"
   (Cost 6)
   QuestionMark
+  Nothing
   [Terraforming]
   [Settle, Consume, Produce]
 
 upliftBioEngineers :: Card
-upliftBioEngineers = Development
+upliftBioEngineers = Card
+  Development
   "UPLIFT BIO-ENGINEERS"
   (Cost 6)
   QuestionMark
+  Nothing
   [Uplift]
   [Consume, Produce]
 

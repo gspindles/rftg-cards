@@ -13,56 +13,62 @@ import Game.RftG.Card
 -------------------------------------------------------------------------------
 
 abandonedMineSquatters :: Card
-abandonedMineSquatters = World
+abandonedMineSquatters = Card
+  (World $ Production RareElements)
   "ABANDONED MINE SQUATTERS"
   (Defense 2)
-  (Production Rare)
   (VP 0)
+  Nothing
   []
   [Settle, Produce]
 
 galacticTradeEmissaries :: Card
-galacticTradeEmissaries = World
+galacticTradeEmissaries = Card
+  (World Grey)
   "GALACTIC TRADE EMISSARIES"
   (Cost 2)
-  Gray
   (VP 1)
+  Nothing
   []
   [Settle, Consume]
 
 gatewayStation :: Card
-gatewayStation = World
+gatewayStation = Card
+  (World $ WindFall NoveltyGoods)
   "GATEWAY STATION"
   (Cost 2)
-  (WindFall Novelty)
   (VP 1)
+  Nothing
   []
   [Consume]
 
 industrialRobots :: Card
-industrialRobots = World
+industrialRobots = Card
+  (World Grey)
   "INDUSTRIAL ROBOTS"
   (Cost 2)
-  Gray
   (VP 1)
+  Nothing
   []
   [Develop, Produce]
 
 starNomadRaiders :: Card
-starNomadRaiders = World
+starNomadRaiders = Card
+  (World Grey)
   "STAR NOMAD RAIDERS"
   (Defense 2)
-  Gray
   (VP 1)
+  Nothing
   []
   [Settle, Trade]
 
 terraformingColonists :: Card
-terraformingColonists = World
+terraformingColonists = Card
+  (World Grey)
   "TERRAFORMING COLONISTS"
   (Cost 2)
-  Gray
   (VP 1)
+  Nothing
   [Terraforming]
   [Settle, Produce]
 
