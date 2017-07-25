@@ -34,7 +34,7 @@ galacticTradeEmissaries = Card
 
 gatewayStation :: Card
 gatewayStation = Card
-  (World $ WindFall NoveltyGoods)
+  (World $ Windfall NoveltyGoods)
   "GATEWAY STATION"
   (Cost 2)
   (VP 1)

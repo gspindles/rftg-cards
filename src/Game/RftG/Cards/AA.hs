@@ -104,7 +104,7 @@ alienFuelRefinery = Card
 
 alienSentinels :: Card
 alienSentinels = Card
-  (World $ WindFall AlienTechnology)
+  (World $ Windfall AlienTechnology)
   "ALIEN SENTINELS"
   (Defense 9)
   (VP 9)
@@ -114,7 +114,7 @@ alienSentinels = Card
 
 alienUpliftChamber :: Card
 alienUpliftChamber = Card
-  (World $ WindFall AlienTechnology)
+  (World $ Windfall AlienTechnology)
   "ALIEN UPLIFT CHAMBER"
   (Cost 6)
   QuestionMark
@@ -124,7 +124,7 @@ alienUpliftChamber = Card
 
 amphibianUpliftRace :: Card
 amphibianUpliftRace = Card
-  (World $ WindFall Genes)
+  (World $ Windfall Genes)
   "AMPHIBIAN UPLIFT RACE"
   (Defense 2)
   (VP 2)
@@ -134,7 +134,7 @@ amphibianUpliftRace = Card
 
 arborealUpliftRace :: Card
 arborealUpliftRace = Card
-  (World $ WindFall Genes)
+  (World $ Windfall Genes)
   "ARBOREAL UPLIFT RACE"
   (Defense 2)
   (VP 2)
@@ -144,7 +144,7 @@ arborealUpliftRace = Card
 
 deepSpaceSymbiontsLTD :: Card
 deepSpaceSymbiontsLTD = Card
-  (World $ WindFall Genes)
+  (World $ Windfall Genes)
   "DEEP SPACE SYMBIONTS, LTD."
   (Cost 3)
   (VP 1)
@@ -174,7 +174,7 @@ frontierCaptital = Card
 
 galacticNewsHub :: Card
 galacticNewsHub = Card
-  (World $ WindFall NoveltyGoods)
+  (World $ Windfall NoveltyGoods)
   "GALACTIC NEWS HUB"
   (Cost 4)
   (VP 2)
@@ -194,7 +194,7 @@ galacticSurveyHeadquarters = Card
 
 imperiumBlasterGemDepot :: Card
 imperiumBlasterGemDepot = Card
-  (World $ WindFall RareElements)
+  (World $ Windfall RareElements)
   "IMPERIUM BLASTER GEM DEPOT"
   (Defense 5)
   (VP 3)
@@ -234,7 +234,7 @@ jumpdriveFuelRefinery = Card
 
 mercenaryGuild :: Card
 mercenaryGuild = Card
-  (World $ WindFall NoveltyGoods)
+  (World $ Windfall NoveltyGoods)
   "MERCENARY GUILD"
   (Defense 3)
   (VP 2)
@@ -254,7 +254,7 @@ oreRichWorld = Card
 
 rebelGemSmugglers :: Card
 rebelGemSmugglers = Card
-  (World $ WindFall RareElements)
+  (World $ Windfall RareElements)
   "rebelGemSmugglers"
   (Defense 2)
   (VP 0)
@@ -264,7 +264,7 @@ rebelGemSmugglers = Card
 
 rebelMutineers :: Card
 rebelMutineers = Card
-  (World $ WindFall NoveltyGoods)
+  (World $ Windfall NoveltyGoods)
   "REBEL MUTINEERS"
   (Defense 2)
   (VP 0)
@@ -314,7 +314,7 @@ sentientRobots = Card
 
 terraformingColony :: Card
 terraformingColony = Card
-  (World $ WindFall NoveltyGoods)
+  (World $ Windfall NoveltyGoods)
   "TERRAFORMING COLONY"
   (Cost 5)
   (VP 2)

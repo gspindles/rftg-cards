@@ -51,7 +51,7 @@ data VP
 
 data WorldType
   = Grey             -- Grey world
-  | WindFall Good    -- Windfall world
+  | Windfall Good    -- Windfall world
   | Production Good  -- Production world
     deriving (Eq, Read, Show)
 

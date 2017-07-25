@@ -204,7 +204,7 @@ terraformingRobots = Card
 
 alienRobotScoutShip :: Card
 alienRobotScoutShip = Card
-  (World $ WindFall AlienTechnology)
+  (World $ Windfall AlienTechnology)
   "ALIEN ROBOT SCOUT SHIP"
   (Defense 4)
   (VP 2)
@@ -214,7 +214,7 @@ alienRobotScoutShip = Card
 
 alienRobotSentry :: Card
 alienRobotSentry = Card
-  (World $ WindFall AlienTechnology)
+  (World $ Windfall AlienTechnology)
   "ALIEN ROBOT SENTRY"
   (Defense 2)
   (VP 2)
@@ -244,7 +244,7 @@ alienRosettaStoneWorld = Card
 
 alphaCentauri :: Card
 alphaCentauri = Card
-  (World $ WindFall RareElements)
+  (World $ Windfall RareElements)
   "ALPHA CENTAURI"
   (Cost 2)
   (VP 0)
@@ -254,7 +254,7 @@ alphaCentauri = Card
 
 aquaticUpliftRace :: Card
 aquaticUpliftRace = Card
-  (World $ WindFall Genes)
+  (World $ Windfall Genes)
   "AQUATIC UPLIFT RACE"
   (Defense 2)
   (VP 2)
@@ -274,7 +274,7 @@ artistColony = Card
 
 asteroidBelt :: Card
 asteroidBelt = Card
-  (World $ WindFall RareElements)
+  (World $ Windfall RareElements)
   "ASTEROID BELT"
   (Cost 2)
   (VP 1)
@@ -284,7 +284,7 @@ asteroidBelt = Card
 
 avianUpliftRace :: Card
 avianUpliftRace = Card
-  (World $ WindFall Genes)
+  (World $ Windfall Genes)
   "AVIAN UPLIFT RACE"
   (Defense 2)
   (VP 2)
@@ -314,7 +314,7 @@ blackMarketTradingWorld = Card
 
 blasterGemMines :: Card
 blasterGemMines = Card
-  (World $ WindFall RareElements)
+  (World $ Windfall RareElements)
   "BLASTER GEM MINES"
   (Cost 3)
   (VP 2)
@@ -334,7 +334,7 @@ cometZone = Card
 
 desertedAlienColony :: Card
 desertedAlienColony = Card
-  (World $ WindFall AlienTechnology)
+  (World $ Windfall AlienTechnology)
   "DESERTED ALIEN COLONY"
   (Cost 5)
   (VP 4)
@@ -344,7 +344,7 @@ desertedAlienColony = Card
 
 desertedAlienLibrary :: Card
 desertedAlienLibrary = Card
-  (World $ WindFall AlienTechnology)
+  (World $ Windfall AlienTechnology)
   "DESERTED ALIEN LIBRARY"
   (Cost 6)
   (VP 5)
@@ -354,7 +354,7 @@ desertedAlienLibrary = Card
 
 desertedAlienOutpost :: Card
 desertedAlienOutpost = Card
-  (World $ WindFall AlienTechnology)
+  (World $ Windfall AlienTechnology)
   "DESERTED ALIEN OUTPOST"
   (Cost 4)
   (VP 3)
@@ -364,7 +364,7 @@ desertedAlienOutpost = Card
 
 destroyedWorld :: Card
 destroyedWorld = Card
-  (World $ WindFall RareElements)
+  (World $ Windfall RareElements)
   "DESTROYED WORLD"
   (Cost 1)
   (VP 0)
@@ -394,7 +394,7 @@ earthsLostColony = Card
 
 empathWorld :: Card
 empathWorld = Card
-  (World $ WindFall RareElements)
+  (World $ Windfall RareElements)
   "EMPATH WORLD"
   (Cost 1)
   (VP 1)
@@ -424,7 +424,7 @@ expandingColony = Card
 
 formerPenalColony :: Card
 formerPenalColony = Card
-  (World $ WindFall NoveltyGoods)
+  (World $ Windfall NoveltyGoods)
   "FORMER PENAL COLONY"
   (Defense 2)
   (VP 1)
@@ -444,7 +444,7 @@ galacticEngineers = Card
 
 galacticResort :: Card
 galacticResort = Card
-  (World $ WindFall NoveltyGoods)
+  (World $ Windfall NoveltyGoods)
   "GALACTIC RESORT"
   (Cost 3)
   (VP 2)
@@ -504,7 +504,7 @@ lostAlienBattleFleet = Card
 
 lostAlienWarship :: Card
 lostAlienWarship = Card
-  (World $ WindFall AlienTechnology)
+  (World $ Windfall AlienTechnology)
   "LOST ALIEN WARSHIP"
   (Defense 5)
   (VP 3)
@@ -624,7 +624,7 @@ pilgrimageWorld = Card
 
 pirateWorld :: Card
 pirateWorld = Card
-  (World $ WindFall NoveltyGoods)
+  (World $ Windfall NoveltyGoods)
   "PIRATE WORLD"
   (Defense 3)
   (VP 2)
@@ -644,7 +644,7 @@ plagueWorld = Card
 
 preSentientRace :: Card
 preSentientRace = Card
-  (World $ WindFall Genes)
+  (World $ Windfall Genes)
   "PRE-SENTIENT RACE"
   (Cost 2)
   (VP 1)
@@ -664,7 +664,7 @@ prosperousWorld = Card
 
 radioactiveWorld :: Card
 radioactiveWorld = Card
-  (World $ WindFall RareElements)
+  (World $ Windfall RareElements)
   "RADIOACTIVE WORLD"
   (Cost 2)
   (VP 1)
@@ -734,7 +734,7 @@ rebelUnderground = Card
 
 rebelWarriorRace :: Card
 rebelWarriorRace = Card
-  (World $ WindFall Genes)
+  (World $ Windfall Genes)
   "REBEL WARRIOR RACE"
   (Defense 3)
   (VP 2)
@@ -744,7 +744,7 @@ rebelWarriorRace = Card
 
 refugeeWorld :: Card
 refugeeWorld = Card
-  (World $ WindFall NoveltyGoods)
+  (World $ Windfall NoveltyGoods)
   "REFUGEE WORLD"
   (Cost 0)
   (VP 1)
@@ -754,7 +754,7 @@ refugeeWorld = Card
 
 reptilianUpliftRace :: Card
 reptilianUpliftRace = Card
-  (World $ WindFall Genes)
+  (World $ Windfall Genes)
   "REPTILIAN UPLIFT RACE"
   (Defense 2)
   (VP 2)
@@ -764,7 +764,7 @@ reptilianUpliftRace = Card
 
 runawayRobots :: Card
 runawayRobots = Card
-  (World $ WindFall RareElements)
+  (World $ Windfall RareElements)
   "RUNAWAY ROBOTS"
   (Defense 1)
   (VP 1)
@@ -804,7 +804,7 @@ spiceWorld = Card
 
 starNomadLair :: Card
 starNomadLair = Card
-  (World $ WindFall NoveltyGoods)
+  (World $ Windfall NoveltyGoods)
   "STAR NOMAD LAIR"
   (Defense 1)
   (VP 1)
@@ -824,7 +824,7 @@ terraformedWorld = Card
 
 theLastOfTheUpliftGnarssh :: Card
 theLastOfTheUpliftGnarssh = Card
-  (World $ WindFall Genes)
+  (World $ Windfall Genes)
   "THE LAST OF THE UPLIFT GNARSSH"
   (Defense 1)
   (VP 0)

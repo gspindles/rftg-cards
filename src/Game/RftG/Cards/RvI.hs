@@ -114,7 +114,7 @@ alienDataRepository = Card
 
 alienMonolith :: Card
 alienMonolith = Card
-  (World $ WindFall AlienTechnology)
+  (World $ Windfall AlienTechnology)
   "ALIEN MONOLITH"
   (Defense 8)
   (VP 8)
@@ -124,7 +124,7 @@ alienMonolith = Card
 
 alienUpliftCenter :: Card
 alienUpliftCenter = Card
-  (World $ WindFall AlienTechnology)
+  (World $ Windfall AlienTechnology)
   "ALIEN UPLIFT CENTER"
   (Defense 5)
   (VP 4)
@@ -154,7 +154,7 @@ devolvedUpliftRace = Card
 
 dyingColony :: Card
 dyingColony = Card
-  (World $ WindFall NoveltyGoods)
+  (World $ Windfall NoveltyGoods)
   "DYING COLONY"
   (Cost 0)
   (VP 0)
@@ -174,7 +174,7 @@ galacticDevelopers = Card
 
 gemSmugglers :: Card
 gemSmugglers = Card
-  (World $ WindFall RareElements)
+  (World $ Windfall RareElements)
   "GEM SMUGGLERS"
   (Cost 3)
   (VP 1)
@@ -224,7 +224,7 @@ imperiumWarlord = Card
 
 insectUpliftRace :: Card
 insectUpliftRace = Card
-  (World $ WindFall Genes)
+  (World $ Windfall Genes)
   "INSECT UPLIFT RACE"
   (Defense 3)
   (VP 2)
@@ -244,7 +244,7 @@ interstellarProspectors = Card
 
 primitiveRebelWorld :: Card
 primitiveRebelWorld = Card
-  (World $ WindFall NoveltyGoods)
+  (World $ Windfall NoveltyGoods)
   "PRIMITIVE REBEL WORLD"
   (Defense 1)
   (VP 1)
@@ -264,7 +264,7 @@ rebelCantina = Card
 
 rebelConvictMines :: Card
 rebelConvictMines = Card
-  (World $ WindFall RareElements)
+  (World $ Windfall RareElements)
   "REBEL CONVICT MINES"
   (Defense 2)
   (VP 1)
@@ -304,7 +304,7 @@ tradingOutpost = Card
 
 universalSymbionts :: Card
 universalSymbionts = Card
-  (World $ WindFall Genes)
+  (World $ Windfall Genes)
   "UNIVERSAL SYMBIONTS"
   (Cost 3)
   (VP 1)

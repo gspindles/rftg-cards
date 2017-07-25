@@ -84,7 +84,7 @@ upliftTerraforming = Card
 
 adaptableUpliftRace :: Card
 adaptableUpliftRace = Card
-  (World $ WindFall Genes)
+  (World $ Windfall Genes)
   "ADAPTABLE UPLIFT RACE"
   (Cost 4)
   (VP 2)
@@ -104,7 +104,7 @@ alienArchives = Card
 
 alienDefenseCenter :: Card
 alienDefenseCenter = Card
-  (World $ WindFall AlienTechnology)
+  (World $ Windfall AlienTechnology)
   "ALIEN DEFENSE CENTER"
   (Defense 8)
   (VP 8)
@@ -124,7 +124,7 @@ alienFirstContactTeam = Card
 
 alienWeaponCache :: Card
 alienWeaponCache = Card
-  (World $ WindFall AlienTechnology)
+  (World $ Windfall AlienTechnology)
   "ALIEN WEAPON CACHE"
   (Defense 3)
   (VP 1)
@@ -164,7 +164,7 @@ antiXenoEmbassy = Card
 
 antiXenoRefugees :: Card
 antiXenoRefugees = Card
-  (World $ WindFall Genes)
+  (World $ Windfall Genes)
   "ANTI-XENO REFUGEES"
   (Cost 2)
   (VP 0)
@@ -184,7 +184,7 @@ corrosiveUpliftWorld = Card
 
 galacticClearingHouse :: Card
 galacticClearingHouse = Card
-  (World $ WindFall NoveltyGoods)
+  (World $ Windfall NoveltyGoods)
   "GALACTIC CLEARING HOUSE"
   (Cost 5)
   (VP 3)
@@ -204,7 +204,7 @@ imperiumMunitionsINC = Card
 
 noveltyPeddlers :: Card
 noveltyPeddlers = Card
-  (World $ WindFall NoveltyGoods)
+  (World $ Windfall NoveltyGoods)
   "NOVELTY PEDDLERS"
   (Cost 2)
   (VP 1)
@@ -224,7 +224,7 @@ panGalacticDiseaseCenter = Card
 
 rebelBlackMarketGangs :: Card
 rebelBlackMarketGangs = Card
-  (World $ WindFall NoveltyGoods)
+  (World $ Windfall NoveltyGoods)
   "REBEL BLACK MARKET GANGS"
   (Defense 1)
   (VP 0)
@@ -234,7 +234,7 @@ rebelBlackMarketGangs = Card
 
 rebelBunker :: Card
 rebelBunker = Card
-  (World $ WindFall RareElements)
+  (World $ Windfall RareElements)
   "REBEL BUNKER"
   (Defense 1)
   (VP 0)
@@ -264,7 +264,7 @@ rebelResistance = Card
 
 starryRiftPioneers :: Card
 starryRiftPioneers = Card
-  (World $ WindFall NoveltyGoods)
+  (World $ Windfall NoveltyGoods)
   "STARRY RIFT PIONEERS"
   (Cost 2)
   (VP 0)
@@ -284,7 +284,7 @@ terraformingSurveyors = Card
 
 terraformingUpliftProject :: Card
 terraformingUpliftProject = Card
-  (World $ WindFall RareElements)
+  (World $ Windfall RareElements)
   "TERRAFORMING UPLIFT PROJECT"
   (Cost 2)
   (VP 0)
@@ -294,7 +294,7 @@ terraformingUpliftProject = Card
 
 upliftCoalition :: Card
 upliftCoalition = Card
-  (World $ WindFall Genes)
+  (World $ Windfall Genes)
   "UPLIFT COALITION"
   (Defense 4)
   QuestionMark
@@ -334,7 +334,7 @@ xenoForwardCommand = Card
 
 xenoHostagePlanet :: Card
 xenoHostagePlanet = Card
-  (World $ WindFall NoveltyGoods)
+  (World $ Windfall NoveltyGoods)
   "XENO HOSTAGE PLANET"
   (Defense 5)
   (VP 4)
@@ -364,7 +364,7 @@ xenoHeldImperiumMine = Card
 
 xenoInfestedAlienOutpost :: Card
 xenoInfestedAlienOutpost = Card
-  (World $ WindFall AlienTechnology)
+  (World $ Windfall AlienTechnology)
   "XENO-INFESTED ALIEN OUTPOST"
   (Defense 7)
   (VP 5)
@@ -374,7 +374,7 @@ xenoInfestedAlienOutpost = Card
 
 xenoInfestedUpliftWorld :: Card
 xenoInfestedUpliftWorld = Card
-  (World $ WindFall Genes)
+  (World $ Windfall Genes)
   "XENO-INFESTED UPLIFT WORLD"
   (Defense 2)
   (VP 1)

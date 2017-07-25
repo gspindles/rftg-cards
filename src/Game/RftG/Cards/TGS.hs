@@ -34,7 +34,7 @@ spaceMercenaries = Card
 
 alienToyShop :: Card
 alienToyShop = Card
-  (World $ WindFall AlienTechnology)
+  (World $ Windfall AlienTechnology)
   "ALIEN TOY SHOP"
   (Cost 3)
   (VP 1)
@@ -44,7 +44,7 @@ alienToyShop = Card
 
 ancientRace :: Card
 ancientRace = Card
-  (World $ WindFall Genes)
+  (World $ Windfall Genes)
   "ANCIENT RACE"
   (Cost 2)
   (VP 1)
@@ -94,7 +94,7 @@ doomedWorld = Card
 
 galacticBazzar :: Card
 galacticBazzar = Card
-  (World $ WindFall NoveltyGoods)
+  (World $ Windfall NoveltyGoods)
   "GALACTIC BAZZAR"
   (Cost 3)
   (VP 2)
@@ -134,7 +134,7 @@ rebelColony = Card
 
 rebelSympathizers :: Card
 rebelSympathizers = Card
-  (World $ WindFall NoveltyGoods)
+  (World $ Windfall NoveltyGoods)
   "REBEL SYMPATHIZERS"
   (Defense 1)
   (VP 1)
@@ -154,7 +154,7 @@ separatistColony = Card
 
 smugglingLair :: Card
 smugglingLair = Card
-  (World $ WindFall RareElements)
+  (World $ Windfall RareElements)
   "SMUGGLING LAIR"
   (Defense 1)
   (VP 1)
